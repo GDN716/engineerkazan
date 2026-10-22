@@ -1,0 +1,709 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Engineer Kazan — ремонт квартир в Казани: от мелких работ (плитка, сантехника, электрика, двери) до ремонта под ключ. Натяжные потолки — комната 18 м² за 14 000 ₽. Электромонтаж под ключ и монтаж кондиционеров. Бесплатный замер, цена фиксируется в договоре.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Engineer Kazan — ремонт квартир под ключ в Казани">
+<meta property="og:description" content="От розетки до дома под ключ. Мелкие работы, ремонт квартир и частные дома в Казани и пригороде.">
+<meta property="og:image" content="https://engineerkazan.ru/img/og.jpg">
+<meta name="theme-color" content="#070708">
+<meta name="yandex-verification" content="6946cf2782185436">
+<title>Ремонт квартир в Казани: мелкие работы и под ключ — Engineer Kazan</title>
+<!-- Основной домен: engineerkazan.ru (старый адрес engineerkazan.netlify.app тоже работает) -->
+<link rel="canonical" href="https://engineerkazan.ru/">
+<meta property="og:url" content="https://engineerkazan.ru/">
+<meta property="og:locale" content="ru_RU">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Engineer Kazan",
+  "description": "Ремонт квартир под ключ в Казани: подбор материалов, свои мастера, расценка фиксируется в договоре. Бесплатный замер.",
+  "url": "https://engineerkazan.ru/",
+  "image": "https://engineerkazan.ru/img/og.jpg",
+  "telephone": "+7-965-610-91-09",
+  "email": "z109109z@gmail.com",
+  "address": {"@type": "PostalAddress", "addressLocality": "Казань", "addressRegion": "Республика Татарстан", "addressCountry": "RU"},
+  "areaServed": {"@type": "City", "name": "Казань"},
+  "makesOffer": [
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Косметический ремонт квартиры"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ремонт квартиры под ключ"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ремонт с дизайн-проектом"}},
+    {"@type": "Offer", "price": "14000", "priceCurrency": "RUB", "itemOffered": {"@type": "Service", "name": "Натяжной потолок под ключ, комната 18 м²"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Электромонтаж под ключ"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Монтаж кондиционеров"}}
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: тёмная сцена, по которой течёт тёплый свет; узкие заглавные заголовки, тонкие линии, фото как окна в готовые интерьеры. Единый тёмный образ */
+:root{
+  --bg:#070708; --glass:rgba(18,17,17,.58); --glass-strong:rgba(14,13,13,.82);
+  --ink:#EFEAE4; --muted:#A39B93; --line:rgba(239,234,228,.14);
+  --accent:#E2864A; --accent-ink:#140B05;
+  --f-display:"Oswald","Arial Narrow",Impact,sans-serif;
+  --f-body:"Golos Text","Segoe UI",system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  --wrap:1200px;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.55;margin:0}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(16px,4vw,40px)}
+h1,h2,h3{font-family:var(--f-display);text-transform:uppercase;text-wrap:balance;margin:0;line-height:1.02;font-weight:400}
+h2{font-size:clamp(32px,4.6vw,58px);letter-spacing:.01em}
+h3{font-size:21px;font-weight:500;letter-spacing:.02em}
+p{margin:0}
+a{color:inherit}
+.mono{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.lead{font-size:clamp(17px,1.6vw,19px);color:var(--muted);max-width:56ch}
+section{padding-block:clamp(64px,9vw,128px)}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 48px;align-items:end;margin-bottom:52px}
+@media (max-width:820px){.sec-head{grid-template-columns:1fr}}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+/* Фон: зацикленное видео потолка с теневым профилем и тёплой световой линией */
+.bgv{position:fixed;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;pointer-events:none;display:block;background:#070708}
+.vignette{position:fixed;inset:0;z-index:0;pointer-events:none;background:linear-gradient(90deg,rgba(7,7,8,.8) 0%,rgba(7,7,8,.5) 55%,rgba(7,7,8,.62) 100%),radial-gradient(ellipse at 50% 40%,transparent 40%,rgba(0,0,0,.6) 100%)}
+main,footer{position:relative;z-index:1}
+
+/* Header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(7,7,8,.55);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;height:66px}
+.logo{font-family:var(--f-display);font-weight:500;font-size:22px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo span{color:var(--accent)}
+nav{display:flex;gap:30px;font-size:14px;letter-spacing:.04em}
+nav a{text-decoration:none;color:var(--muted);white-space:nowrap} nav a:hover{color:var(--ink)}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;justify-content:center;gap:10px;font:500 15px var(--f-body);padding:14px 26px;border-radius:999px;border:1px solid var(--accent);background:var(--accent);color:var(--accent-ink);text-decoration:none;cursor:pointer;transition:background .2s,color .2s,transform .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:rgba(239,234,228,.5)}
+.btn.ghost:hover{border-color:var(--ink)}
+.menu-btn{display:none;background:transparent;border:1px solid var(--line);color:var(--ink);border-radius:999px;width:44px;height:44px;padding:0;cursor:pointer;align-items:center;justify-content:center;margin-left:auto}
+.menu-btn svg{width:20px;height:20px}
+@media (max-width:1919px){
+  .menu-btn{display:inline-flex}
+  nav{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;gap:0;background:rgba(10,10,11,.97);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:8px clamp(16px,4vw,40px) 16px;font-size:17px}
+  nav.open{display:flex}
+  nav a{padding:12px 0;border-bottom:1px solid var(--line);color:var(--ink)}
+  nav a:last-child{border-bottom:0}
+}
+@media (max-width:460px){.bar{gap:10px}.bar .btn{padding:10px 14px;font-size:14px}.logo{font-size:17px;letter-spacing:.1em}.menu-btn{width:40px;height:40px}}
+
+/* Hero */
+.hero{padding-block:clamp(40px,7vw,96px) clamp(64px,8vw,112px)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,5vw,72px);align-items:end}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr}}
+.hero h1{font-size:clamp(46px,8.4vw,112px);font-weight:300;letter-spacing:-.005em;margin-block:22px 28px}
+.hero h1 b{font-weight:500;color:var(--accent)}
+.hero h1 .eyebrow{display:block;width:fit-content;max-width:100%;font-family:var(--f-display);font-weight:500;font-size:clamp(18px,2vw,26px);line-height:1.2;letter-spacing:.08em;color:var(--ink);background:rgba(226,134,74,.14);border-left:3px solid var(--accent);padding:10px 16px;border-radius:0 4px 4px 0;margin-bottom:26px}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.hero-photo{position:relative}
+.hero-photo img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;max-width:100%;border-radius:4px}
+.hero-photo .tag{position:absolute;left:16px;bottom:16px;right:16px;background:var(--glass-strong);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:14px 16px;font-size:14px;border:1px solid var(--line);border-radius:4px}
+.hero-photo .tag b{display:block;font-family:var(--f-mono);font-weight:500;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:4px}
+.promises{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:44px;padding-top:24px;border-top:1px solid var(--line);font-size:15px;color:var(--muted)}
+.promises span::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);margin-right:10px;vertical-align:middle}
+
+/* Принципы */
+.principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+@media (max-width:900px){.principles{grid-template-columns:1fr}}
+.pr{background:var(--glass);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:32px 28px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.pr h3{font-size:26px}
+.pr p{color:var(--muted);font-size:15.5px}
+.pr .k{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+
+/* Пакеты */
+.packs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+@media (max-width:900px){.packs{grid-template-columns:1fr}}
+.pack{background:var(--glass);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:4px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.pack img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}
+.pack .body{padding:26px;display:flex;flex-direction:column;gap:14px;flex:1}
+.pack h3{font-size:30px;font-weight:400}
+.pack ul{margin:0;padding-left:18px;color:var(--muted);font-size:15px;display:grid;gap:6px}
+.pack .more{margin-top:auto;padding-top:16px;border-top:1px solid var(--line);font-size:15px;color:var(--accent);text-decoration:none}
+.pack .more:hover{text-decoration:underline}
+.pack.hot{border-color:var(--accent)}
+
+/* Услуги: мелкий ремонт и частные дома */
+.svc{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+@media (max-width:1000px){.svc{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.svc{grid-template-columns:1fr}}
+.svc-card{background:var(--glass);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:4px;padding:22px 20px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.svc-card h3{font-size:20px}
+.svc-card p{color:var(--muted);font-size:14.5px;flex:1}
+.svc-card .price{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.svc-card .order{margin-top:4px;align-self:flex-start;background:none;border:0;padding:0;font:500 15px var(--f-body);color:var(--ink);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.svc-card .order:hover{color:var(--accent)}
+.svc-note{font-size:14px;color:var(--muted);margin-top:18px}
+
+/* Натяжные потолки */
+.ceil{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:28px;align-items:stretch}
+@media (max-width:900px){.ceil{grid-template-columns:1fr}}
+.ceil-offer{background:var(--glass);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid var(--accent);border-radius:4px;padding:28px 26px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.ceil-offer .big{font-family:var(--f-display,inherit);font-size:clamp(34px,4vw,46px);line-height:1;color:var(--ink)}
+.ceil-offer .big small{display:block;font-size:15px;color:var(--muted);margin-top:8px;font-family:var(--f-body)}
+.ceil-offer ul{margin:0;padding-left:18px;color:var(--muted);font-size:15px;display:grid;gap:6px}
+.ceil-offer .btn{align-self:flex-start;margin-top:auto}
+.ceil-photos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;min-width:0}
+@media (max-width:520px){.ceil-photos{grid-template-columns:1fr 1fr}.ceil-photos figure:first-child{grid-column:1/-1}}
+.ceil-photos figure{margin:0;overflow:hidden;border-radius:4px;min-width:0}
+.ceil-photos img{width:100%;height:100%;min-height:220px;object-fit:cover;display:block}
+
+/* Галерея */
+.gallery{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:14px}
+.gallery figure{margin:0;position:relative;overflow:hidden;min-width:0;border-radius:4px}
+.gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s ease}
+.gallery figure:hover img{transform:scale(1.04)}
+.gallery figcaption{position:absolute;left:0;bottom:0;right:0;padding:32px 16px 14px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.7));font-family:var(--f-display);text-transform:uppercase;letter-spacing:.06em;font-size:16px}
+.g1{grid-column:span 7;aspect-ratio:7/5}.g2{grid-column:span 5;aspect-ratio:5/5}
+.g3{grid-column:span 4;aspect-ratio:4/5}.g4{grid-column:span 4;aspect-ratio:4/5}.g5{grid-column:span 4;aspect-ratio:4/5}
+.g6{grid-column:span 5;aspect-ratio:5/5}.g7{grid-column:span 7;aspect-ratio:7/5}
+@media (max-width:720px){.gallery figure{grid-column:span 12;aspect-ratio:4/3}}
+
+/* Отзывы: виджет Яндекс Карт с настоящими отзывами из карточки */
+.reviews{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,560px);gap:clamp(24px,5vw,64px);align-items:start}
+@media (max-width:900px){.reviews{grid-template-columns:1fr}}
+.reviews .lead{margin-top:16px}
+.reviews-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.reviews-points{margin:28px 0 0;padding:0;list-style:none;display:grid;gap:12px;color:var(--muted);font-size:15px}
+.reviews-points li::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);margin-right:10px;vertical-align:middle}
+.reviews-widget{background:#fff;border-radius:8px;overflow:hidden;border:1px solid var(--line);width:100%;max-width:560px}
+.reviews-widget iframe{display:block;width:100%;height:640px;border:0}
+@media (max-width:520px){.reviews-widget iframe{height:560px}}
+
+/* Процесс */
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--ink)}
+@media (max-width:900px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+.step{padding:24px 24px 30px 0;display:grid;gap:10px;align-content:start;min-width:0;position:relative}
+.step::before{content:"";position:absolute;top:-5px;left:0;width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 14px var(--accent)}
+.step p{font-size:15px;color:var(--muted)}
+
+/* Приёмка */
+.check{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,72px);align-items:center}
+@media (max-width:860px){.check{grid-template-columns:1fr}}
+.check img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;border-radius:4px}
+.tol{width:100%;border-collapse:collapse;font-size:15px;margin-top:28px}
+.tol th,.tol td{text-align:left;padding:13px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+.tol th{font-family:var(--f-mono);font-weight:400;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.tol td:last-child{color:var(--muted)}
+.tbl{overflow-x:auto}
+
+/* Районы */
+.districts{display:flex;flex-wrap:wrap;gap:10px}
+.districts span{border:1px solid var(--line);padding:11px 18px;font-size:15px;border-radius:999px;background:var(--glass)}
+
+/* Клипы */
+.reels{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px}
+@media (max-width:1000px){.reels{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:520px){.reels{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.reel{position:relative;aspect-ratio:9/16;overflow:hidden;border-radius:14px;max-width:100%;border:1px solid var(--line)}
+.reel img{width:100%;height:100%;object-fit:cover;display:block}
+.reel .ov{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:12px;color:#fff;background:linear-gradient(rgba(0,0,0,.5),transparent 35%,transparent 50%,rgba(0,0,0,.78))}
+.reel .hook{font-family:var(--f-display);text-transform:uppercase;font-size:16px;line-height:1.1}
+.reel .rub{font-family:var(--f-mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;opacity:.9}
+.note{font-size:13px;color:var(--muted);margin-top:22px}
+
+/* Заявка */
+.cta-box{background:var(--glass);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:4px;padding:clamp(24px,4vw,56px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,64px)}
+@media (max-width:860px){.cta-box{grid-template-columns:1fr}}
+.lead-form{display:grid;gap:14px}
+.field{display:grid;gap:8px}
+.field label{font-size:14px;color:var(--muted)}
+.lead-form input,.lead-form textarea{width:100%;font:16px var(--f-body);padding:14px 16px;border:1px solid var(--line);background:rgba(0,0,0,.35);color:var(--ink);border-radius:4px}
+.lead-form input:focus,.lead-form textarea:focus{border-color:var(--accent);outline:none}
+.lead-form textarea{min-height:100px;resize:vertical}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
+@media (max-width:520px){.two{grid-template-columns:1fr}}
+.stage{display:flex;flex-wrap:wrap;gap:8px;position:relative}
+.stage input{position:absolute;left:0;top:0;width:1px;height:1px;margin:0;opacity:0;pointer-events:none}
+.stage label{border:1px solid var(--line);padding:9px 15px;border-radius:999px;cursor:pointer;font-size:14px;color:var(--ink)}
+.stage input:checked+label{border-color:var(--accent);color:var(--accent)}
+.stage input:focus-visible+label{outline:2px solid var(--accent);outline-offset:2px}
+.ok{border:1px solid var(--accent);padding:16px;font-size:15px;border-radius:4px}
+.contacts{display:grid;gap:18px;margin-top:30px}
+.contacts div{display:grid;gap:2px}
+.contacts b{font-family:var(--f-display);font-weight:400;font-size:24px;letter-spacing:.04em;text-transform:uppercase}
+
+.agree{display:flex;gap:12px;align-items:flex-start;font-size:13.5px;color:var(--muted);line-height:1.45;cursor:pointer}
+.agree input{width:18px;height:18px;margin:1px 0 0;flex:none;accent-color:var(--accent)}
+.agree a{color:var(--ink)}
+[hidden]{display:none!important}
+/* Кнопки мессенджеров */
+.msg{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.msg a{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;border:1px solid var(--line);text-decoration:none;font:600 15px var(--f-body);color:var(--ink)}
+.msg a::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--c)}
+.msg .tg{--c:#2AABEE}.msg .wa{--c:#25D366}.msg .mx{--c:#7B5CFF}
+.msg-note{font-size:13px;color:var(--muted);margin-top:8px}
+/* Значки мессенджеров в шапке */
+.hmsg{display:flex;gap:6px;align-items:center}
+.hmsg a{width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;flex:none}
+.hmsg a svg{width:18px;height:18px}
+.hmsg .tg{background:#2AABEE}.hmsg .wa{background:#25D366}.hmsg .mx{background:#7B5CFF}
+.hcontact{display:flex;align-items:center;gap:12px;margin-left:auto}
+@media (max-width:460px){.hmsg{gap:4px}.hmsg a{width:28px;height:28px}.hmsg a svg{width:15px;height:15px}}
+/* Кнопка звонка: в шапке и закреплённая панель на телефоне */
+.call-top{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink);font:500 15px var(--f-body);white-space:nowrap}
+.call-top svg{width:18px;height:18px;color:var(--accent)}
+.callbar{display:none}
+@media (max-width:760px){
+  .call-top span{display:none}
+  .call-top{width:40px;height:40px;justify-content:center;border:1px solid var(--accent);border-radius:999px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:25;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(7,7,8,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--line)}
+  .callbar a{flex:1;text-align:center;padding:13px 10px;border-radius:999px;font:600 16px var(--f-body);text-decoration:none}
+  .callbar .c1{background:var(--accent);color:var(--accent-ink)}
+  .callbar .c2{border:1px solid var(--line);color:var(--ink)}
+  body{padding-bottom:76px}
+  .bar > .btn{display:none}
+  .cookie{bottom:calc(84px + env(safe-area-inset-bottom,0px))}
+}
+.cookie{position:fixed;left:16px;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;max-width:720px;margin-inline:auto;background:var(--glass-strong);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:6px;padding:16px 18px;display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;font-size:14px;color:var(--muted)}
+.cookie p{flex:1 1 320px;min-width:0}
+.cookie a{color:var(--ink)}
+.cookie .btns{display:flex;gap:10px;flex-wrap:wrap}
+.cookie .btn{padding:10px 18px;font-size:14px}
+footer{border-top:1px solid var(--line);padding-block:32px;font-size:13.5px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<video id="bgv" class="bgv" autoplay muted loop playsinline preload="auto" poster="img/bg-poster.jpg" aria-hidden="true"><source src="img/bg.mp4" type="video/mp4"></video>
+<div class="vignette" aria-hidden="true"></div>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top">Engineer <span>Kazan</span></a>
+    <nav id="nav" aria-label="Разделы">
+      <a href="#small">Мелкий ремонт</a><a href="#ceilings">Потолки</a><a href="#electric">Электромонтаж</a><a href="#ac">Кондиционеры</a><a href="#packs">Квартиры под ключ</a><a href="#houses">Частные дома</a><a href="#works">Объекты</a><a href="#reviews">Отзывы</a><a href="#process">Этапы</a><a href="#lead">Контакты</a>
+    </nav>
+    <button class="menu-btn" type="button" id="menuBtn" aria-controls="nav" aria-expanded="false" aria-label="Открыть меню"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"/></svg></button>
+    <div class="hmsg"><a class="tg" href="https://t.me/+79656109109" target="_blank" rel="noopener" aria-label="Написать в Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M9.6 15.2l-.4 4.1c.5 0 .8-.2 1-.5l2.5-2.4 5.1 3.7c.9.5 1.6.2 1.8-.9l3.3-15.4c.3-1.3-.5-1.9-1.4-1.6L1.9 9.5c-1.3.5-1.3 1.2-.2 1.6l5 1.6L18.3 5.4c.5-.3 1-.1.6.2z"/></svg></a><a class="wa" href="https://wa.me/79656109109" target="_blank" rel="noopener" aria-label="Написать в WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a><a class="mx" href="https://max.ru/u/f9LHodD0cOJtxExRxXfRDUpJuVhRXKote5mQpIspn0BRSNDShJHzEzCQXgc" target="_blank" rel="noopener" aria-label="Написать в MAX"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M5 18V6h2.6L12 12l4.4-6H19v12h-2.6v-7.6L12 16l-4.4-5.6V18z"/></svg></a></div>
+    <a class="call-top" href="tel:+79656109109" aria-label="Позвонить +7 965 610-91-09"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span>+7 965 610-91-09</span></a>
+    <a class="btn" href="#lead">Подать заявку</a>
+  </div>
+</header>
+<div class="callbar"><a class="c1" href="tel:+79656109109">Позвонить</a><a class="c2" href="#lead">Заявка на замер</a></div>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1><span class="eyebrow">Ремонт квартир в&nbsp;Казани: от&nbsp;мелких работ до&nbsp;«под&nbsp;ключ»</span>От&nbsp;розетки до&nbsp;дома <b>под&nbsp;ключ</b></h1>
+        <p class="lead">Плитка, сантехника, электрика, двери, потолки — приедем даже ради одной задачи. Ремонт квартир под&nbsp;ключ, а&nbsp;для частных домов — фундамент, кровля, заборы, бани и&nbsp;пристройки. Казань и&nbsp;пригород до&nbsp;30&nbsp;км.</p>
+        <div class="actions">
+          <a class="btn" href="#lead">Вызвать инженера на замер</a>
+          <a class="btn ghost" href="#works">Смотреть объекты</a>
+        </div>
+        <div class="promises">
+          <span>Подбор и закупка материалов</span><span>Свои проверенные мастера</span><span>Расценка фиксируется в договоре</span>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="img/hero.jpg" alt="Гостиная с диваном, трековым светом и подсвеченными нишами">
+        <div class="tag"><b>Наш объект</b>Гостиная: трековый свет, ниши с подсветкой, панели на стенах.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="principles">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="mono">Подход</div><h2>Почему инженерный</h2></div>
+        <p class="lead">Ремонт ломается там, где решения принимают на ходу. Мы принимаем их заранее, на бумаге, и закрепляем в договоре.</p>
+      </div>
+      <div class="principles">
+        <article class="pr"><span class="k">Проект</span><h3>Дизайн и стройка в одних руках</h3><p>Дизайнер и прораб работают вместе с первого замера. Не бывает ситуации «дизайнер нарисовал, строители не могут сделать».</p></article>
+        <article class="pr"><span class="k">Прозрачность</span><h3>Вы видите стройку онлайн</h3><p>График по дням и фото каждого этапа присылаем вам в мессенджер. Скрытые работы снимаем до того, как закроем стены.</p></article>
+        <article class="pr"><span class="k">Результат</span><h3>Квартира готова к жизни</h3><p>Сдаём после уборки, с собранной мебелью и светом. Можно заезжать самим или сразу сдавать в аренду.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="details">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="mono">Узлы</div><h2>Детали, по которым видно инженера</h2></div>
+        <p class="lead">Дорогой интерьер делают не материалы, а примыкания. Там, где обычно ставят плинтус и уголок, мы делаем чистую линию.</p>
+      </div>
+      <div class="principles">
+        <article class="pr"><span class="k">Потолок</span><h3>Теневой зазор</h3><p>Потолок не упирается в стену, а отделён ровной тёмной линией. Без багета и без трещин по углам.</p></article>
+        <article class="pr"><span class="k">Свет</span><h3>Парящий потолок с подсветкой</h3><p>Световая линия по периметру, скрытая в профиле. Свет мягко ложится на стену и подчёркивает фактуру.</p></article>
+        <article class="pr"><span class="k">Стены</span><h3>Шпон и панели без плинтуса</h3><p>Деревянные панели и рейки доходят до потолка и заканчиваются чистым торцом, с подсветкой или без.</p></article>
+        <article class="pr"><span class="k">Фактура</span><h3>Декоративная штукатурка</h3><p>Рельефные стены под камень, которые оживают под скользящим светом карниза.</p></article>
+        <article class="pr"><span class="k">Плоскость</span><h3>Панели с рустами</h3><p>Крупные плоскости, разделённые тонкими швами. Швы идут строго по вертикали и сходятся с линией потолка.</p></article>
+        <article class="pr"><span class="k">Примыкания</span><h3>Зеркала и стекло в профиле</h3><p>Зеркальные панели в тонкой чёрной рамке, на одном уровне со стеной и потолком.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="packs">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="mono">Форматы</div><h2>Три формата ремонта</h2></div>
+        <p class="lead">Расценки рассчитываем после бесплатного замера и фиксируем в договоре. Материалы закупаем сами или работаем с вашими.</p>
+      </div>
+      <div class="packs">
+        <article class="pack">
+          <img src="img/living-soft.jpg" alt="Спальня с кольцевым светильником и мягким изголовьем" loading="lazy">
+          <div class="body">
+            <div class="mono">Косметический</div>
+            <h3>Освежить</h3>
+            <ul><li>Покраска, обои, напольное покрытие</li><li>Замена розеток, светильников, дверей</li><li>Без переноса стен и коммуникаций</li></ul>
+            <a class="more" href="#lead">Узнать стоимость →</a>
+          </div>
+        </article>
+        <article class="pack hot">
+          <img src="img/kitchen.jpg" alt="Белая кухня с мраморным фартуком и трековым светом" loading="lazy">
+          <div class="body">
+            <div class="mono">Выбирают чаще всего</div>
+            <h3>Под ключ</h3>
+            <ul><li>Электрика и сантехника с нуля, стяжка, штукатурка по маякам</li><li>Санузел под ключ с гидроизоляцией</li><li>Новостройки без отделки и вторичное жильё</li></ul>
+            <a class="more" href="#lead">Узнать стоимость →</a>
+          </div>
+        </article>
+        <article class="pack">
+          <img src="img/bath-dark.jpg" alt="Санузел с круглым зеркалом с подсветкой и стеной под камень" loading="lazy">
+          <div class="body">
+            <div class="mono">С дизайн-проектом</div>
+            <h3>Дизайн</h3>
+            <ul><li>Дизайн-проект, визуализации, авторский надзор</li><li>Скрытые двери, теневой профиль, крупный керамогранит</li><li>Комплектация мебелью и светом</li></ul>
+            <a class="more" href="#lead">Узнать стоимость →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="small">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="mono">Мелкий ремонт</div><h2>Приедем даже ради одной задачи</h2></div>
+        <p class="lead">Не нужно затевать большой ремонт, чтобы позвать мастера. Сделаем одну работу аккуратно и с гарантией.</p>
+      </div>
+      <div class="svc">
+        <article class="svc-card"><h3>Плитка и керамогранит</h3><p>Ванная, санузел, кухонный фартук, пол. Демонтаж старой плитки, выравнивание, затирка.</p><span class="price">Цена — после бесплатного замера</span><button class="order" type="button" data-svc="Плитка и керамогранит">Оставить заявку →</button></article>
+        <article class="svc-card"><h3>Сантехника</h3><p>Замена смесителя, унитаза, ванны, инсталляции. Разводка труб, подключение стиральной машины.</p><span class="price">Цена — после бесплатного замера</span><button class="order" type="button" data-svc="Сантехника">Оставить заявку →</button></article>
+        <article class="svc-card"><h3>Электрика</h3><p>Розетки, выключатели, светильники, перенос и замена проводки, новый электрощит.</p><span class="price">Цена — после бесплатного замера</span><button class="order" type="button" data-svc="Электрика">Оставить заявку →</button></article>
+        <article class="svc-card"><h3>Двери</h3><p>Установка межкомнатных и входных дверей, скрытые двери, доборы и наличники.</p><span class="price">Цена — после бесплатного замера</span><button class="order" type="button" data-svc="Двери">Оставить заявку →</button></article>
+        <article class="svc-card"><h3>Потолки</h3><p>Натяжные, из гипсокартона, покраска потолка, монтаж подсветки и световых линий.</p><span class="price">Цена — после бесплатного замера</span><button class="order" type="button" data-svc="Потолки">Оставить заявку →</button></article>
+        <article class="svc-card"><h3>Стены</h3><p>Выравнивание и шпаклёвка, покраска, поклейка обоев, декоративная штукатурка.</p><span class="price">Цена — после бесплатного замера</span><button class="order" type="button" data-svc="Стены">Оставить заявку →</button></article>
+        <article class="svc-card"><h3>Полы</h3><p>Стяжка, наливной пол, ламинат, кварцвинил, тёплый пол.</p><span class="price">Цена — после бесплатного замера</span><button class="order" type="button" data-svc="Полы">Оставить заявку →</button></article>
+        <article class="svc-card"><h3>Панели и обшивка</h3><p>Обшивка санузла панелями ПВХ, гипсокартонные короба и перегородки, балконы.</p><span class="price">Цена — после бесплатного замера</span><button class="order" type="button" data-svc="Панели и обшивка">Оставить заявку →</button></article>
+      </div>
+      <p class="svc-note">Точную цену назовём после бесплатного замера и зафиксируем в договоре до начала работ.</p>
+    </div>
+  </section>
+
+  <section id="ceilings">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="mono">Натяжные потолки</div><h2>Натяжной потолок в комнату — за один день</h2></div>
+        <p class="lead">Матовые, сатиновые и глянцевые полотна, световые линии, треки и парящие потолки. Замер бесплатно, цена фиксируется в договоре.</p>
+      </div>
+      <div class="ceil">
+        <div class="ceil-offer">
+          <div class="mono">Под ключ, с материалом</div>
+          <div class="big">14 000 ₽<small>комната 18 м²</small></div>
+          <ul>
+            <li>полотно и профиль по периметру</li>
+            <li>6 светильников и установка люстры</li>
+            <li>монтаж и уборка после работы</li>
+            <li>договор и гарантия 1 год</li>
+          </ul>
+          <p class="svc-note" style="margin:0">Световые линии, треки и теневой профиль — по замеру.</p>
+          <button class="btn order-ceil" type="button" data-svc="Натяжной потолок">Вызвать замерщика бесплатно</button>
+          <a href="potolki.html" style="color:var(--accent);font-size:15px">Подробнее о натяжных потолках →</a>
+        </div>
+        <div class="ceil-photos">
+          <figure><img src="img/ceil-track.jpg" alt="Натяжной потолок с трековыми светильниками и световыми линиями" loading="lazy"></figure>
+          <figure><img src="img/ceil-lines.jpg" alt="Парящий натяжной потолок со световой линией" loading="lazy"></figure>
+          <figure><img src="img/ceil-shadow.jpg" alt="Натяжной потолок с теневым профилем и треком" loading="lazy"></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="electric">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="mono">Электромонтаж</div><h2>Электрика под ключ — от щита до последней розетки</h2></div>
+        <p class="lead">Квартиры, дома и коммерческие помещения. Черновой и чистовой монтаж, проверка мегаомметром и схема разводки на руки.</p>
+      </div>
+      <div class="svc">
+        <article class="svc-card"><h3>Электрика под ключ</h3><p>Новостройка или вторичка: разметка, штробление, разводка кабеля, подрозетники, щит, чистовой монтаж.</p><span class="price">Цена — после бесплатного замера</span><button class="order" type="button" data-svc="Электрика под ключ">Оставить заявку →</button></article>
+        <article class="svc-card"><h3>Электрощит</h3><p>Сборка и замена щита: автоматы, УЗО, дифавтоматы, реле напряжения. Аккуратно, с маркировкой линий.</p><span class="price">Цена — после бесплатного замера</span><button class="order" type="button" data-svc="Электрощит">Оставить заявку →</button></article>
+        <article class="svc-card"><h3>Замена проводки</h3><p>Замена старой и алюминиевой проводки на медь. Можно по частям, без полного ремонта.</p><span class="price">Цена — после бесплатного замера</span><button class="order" type="button" data-svc="Замена проводки">Оставить заявку →</button></article>
+        <article class="svc-card"><h3>Освещение</h3><p>Световые линии, треки, точечные светильники, подсветка ниш и карнизов.</p><span class="price">Цена — после бесплатного замера</span><button class="order" type="button" data-svc="Освещение">Оставить заявку →</button></article>
+        <article class="svc-card"><h3>Розетки и выключатели</h3><p>Установка, перенос и добавление точек, отдельные линии под плиту, духовку и стиральную машину.</p><span class="price">Цена — после бесплатного замера</span><button class="order" type="button" data-svc="Розетки и выключатели">Оставить заявку →</button></article>
+        <article class="svc-card"><h3>Тёплый пол</h3><p>Электрический тёплый пол под плитку и ламинат, подключение терморегулятора.</p><span class="price">Цена — после бесплатного замера</span><button class="order" type="button" data-svc="Тёплый пол">Оставить заявку →</button></article>
+        <article class="svc-card"><h3>Частный дом</h3><p>Ввод в дом, разводка по этажам, заземление, уличное освещение.</p><span class="price">Цена — после бесплатного замера</span><button class="order" type="button" data-svc="Частный дом">Оставить заявку →</button></article>
+        <article class="svc-card"><h3>Проверка электрики</h3><p>Поиск неисправностей, замеры сопротивления изоляции, рекомендации.</p><span class="price">Цена — после бесплатного замера</span><button class="order" type="button" data-svc="Проверка электрики">Оставить заявку →</button></article>
+      </div>
+      <p class="svc-note">Точную цену назовём после бесплатного замера и зафиксируем в договоре до начала работ.</p>
+    </div>
+  </section>
+
+  <section id="ac">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="mono">Кондиционеры</div><h2>Монтаж кондиционеров в квартире и доме</h2></div>
+        <p class="lead">Установим сплит-систему по технологии: вакуумирование трассы, проверка на утечки, аккуратный фасад и без пыли в квартире.</p>
+      </div>
+      <div class="svc">
+        <article class="svc-card"><h3>Монтаж сплит-системы</h3><p>Установка внутреннего и наружного блока, трасса, вакуумирование, запуск и проверка работы.</p><span class="price">Цена — после бесплатного замера</span><button class="order" type="button" data-svc="Монтаж кондиционера">Оставить заявку →</button></article>
+        <article class="svc-card"><h3>Трасса на этапе ремонта</h3><p>Прокладываем трассу и дренаж в стене до чистовой отделки — потом остаётся только повесить кондиционер.</p><span class="price">Цена — после бесплатного замера</span><button class="order" type="button" data-svc="Трасса кондиционера на этапе ремонта">Оставить заявку →</button></article>
+        <article class="svc-card"><h3>Демонтаж и перенос</h3><p>Снимем кондиционер без потери фреона и установим в другом месте.</p><span class="price">Цена — после бесплатного замера</span><button class="order" type="button" data-svc="Демонтаж и перенос кондиционера">Оставить заявку →</button></article>
+        <article class="svc-card"><h3>Подбор кондиционера</h3><p>Подскажем мощность и модель под площадь комнаты, место блоков и электрику.</p><span class="price">Цена — после бесплатного замера</span><button class="order" type="button" data-svc="Подбор кондиционера">Оставить заявку →</button></article>
+      </div>
+      <p class="svc-note">Электрику под кондиционер делаем сами — отдельная линия и автомат, без вызова второго мастера.</p>
+    </div>
+  </section>
+
+  <section id="houses">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="mono">Частные дома и участки</div><h2>Дом, баня, забор — от фундамента до крыши</h2></div>
+        <p class="lead">Строим и ремонтируем частные дома в Казани и пригороде до 30 км. Свои бригады, материалы закупаем сами.</p>
+      </div>
+      <div class="svc">
+        <article class="svc-card"><h3>Фундамент и бетон</h3><p>Ленточный, плитный, свайный фундамент. Заливка полов, отмостки, дорожек.</p><span class="price">Цена — после бесплатного замера</span><button class="order" type="button" data-svc="Фундамент и бетон">Оставить заявку →</button></article>
+        <article class="svc-card"><h3>Кровля</h3><p>Монтаж и ремонт кровли, металлочерепица, профлист, водостоки, утепление.</p><span class="price">Цена — после бесплатного замера</span><button class="order" type="button" data-svc="Кровля">Оставить заявку →</button></article>
+        <article class="svc-card"><h3>Заборы</h3><p>Из профлиста, штакетника, сетки и кирпича. Ворота и калитки.</p><span class="price">Цена — после бесплатного замера</span><button class="order" type="button" data-svc="Заборы">Оставить заявку →</button></article>
+        <article class="svc-card"><h3>Бани</h3><p>Строительство бани под ключ: фундамент, сруб или каркас, отделка, печь.</p><span class="price">Цена — после бесплатного замера</span><button class="order" type="button" data-svc="Бани">Оставить заявку →</button></article>
+        <article class="svc-card"><h3>Сайдинг и фасады</h3><p>Обшивка дома сайдингом, утепление фасада, отделка фронтонов и цоколя.</p><span class="price">Цена — после бесплатного замера</span><button class="order" type="button" data-svc="Сайдинг и фасады">Оставить заявку →</button></article>
+        <article class="svc-card"><h3>Пристройки</h3><p>Веранды, террасы, навесы, пристройки к дому из бруса, каркаса и блоков.</p><span class="price">Цена — после бесплатного замера</span><button class="order" type="button" data-svc="Пристройки">Оставить заявку →</button></article>
+        <article class="svc-card"><h3>Инженерные сети</h3><p>Отопление, водопровод и канализация частного дома под ключ.</p><span class="price">Цена — после бесплатного замера</span><button class="order" type="button" data-svc="Инженерные сети">Оставить заявку →</button></article>
+        <article class="svc-card"><h3>Внутренняя отделка дома</h3><p>Черновая и чистовая отделка, лестницы, полы, потолки — как в квартире.</p><span class="price">Цена — после бесплатного замера</span><button class="order" type="button" data-svc="Внутренняя отделка дома">Оставить заявку →</button></article>
+      </div>
+      <p class="svc-note">Выезд на участок и замер — бесплатно. Смету с ценой по каждой работе отдаём до подписания договора.</p>
+    </div>
+  </section>
+
+  <section id="works">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="mono">Объекты</div><h2>Наши готовые объекты</h2></div>
+        <p class="lead">Фотографии квартир, которые мы сдали. Свет, потолки, санузлы и мебель сделаны нашей командой.</p>
+      </div>
+      <div class="gallery">
+        <figure class="g1"><img src="img/living-warm.jpg" alt="Кухня-гостиная с дизайнерским светильником" loading="lazy"><figcaption>Кухня-гостиная</figcaption></figure>
+        <figure class="g2"><img src="img/bath-stone.jpg" alt="Санузел с арочными зеркалами и световыми линиями" loading="lazy"><figcaption>Санузел с арочной подсветкой</figcaption></figure>
+        <figure class="g3"><img src="img/bedroom.jpg" alt="Комната с рабочим местом и подсвеченными стеллажами" loading="lazy"><figcaption>Детская</figcaption></figure>
+        <figure class="g4"><img src="img/dining.jpg" alt="Кухня с барной стойкой и светильником" loading="lazy"><figcaption>Кухня с барной стойкой</figcaption></figure>
+        <figure class="g5"><img src="img/bath-light.jpg" alt="Душевая со световой линией в натяжном потолке" loading="lazy"><figcaption>Световая линия в душе</figcaption></figure>
+        <figure class="g6"><img src="img/chair.jpg" alt="Гардеробная с подсветкой полок" loading="lazy"><figcaption>Гардеробная с подсветкой</figcaption></figure>
+        <figure class="g7"><img src="img/living-sun.jpg" alt="Натяжной потолок со встроенными световыми линиями" loading="lazy"><figcaption>Натяжной потолок со световыми линиями</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="wrap reviews">
+      <div>
+        <div class="mono">Отзывы</div>
+        <h2>Что говорят клиенты</h2>
+        <p class="lead">Отзывы публикуются на Яндекс Картах и подтягиваются сюда автоматически. Мы не редактируем и не удаляем их — вы видите то же, что и все.</p>
+        <ul class="reviews-points">
+          <li>Отзыв может оставить только клиент с аккаунтом Яндекса</li>
+          <li>Оценки и ответы видны всем на Яндекс Картах</li>
+          <li>Работали с нами? Расскажите, как всё прошло — это очень помогает</li>
+        </ul>
+        <div class="reviews-actions">
+          <a class="btn" href="https://yandex.ru/maps/org/91211030840/reviews/" target="_blank" rel="noopener">Оставить отзыв на Яндекс Картах</a>
+          <a class="btn ghost" href="#lead">Заказать работу</a>
+        </div>
+      </div>
+      <div class="reviews-widget">
+        <iframe src="https://yandex.ru/maps-reviews-widget/91211030840?comments" title="Отзывы об Engineer Kazan на Яндекс Картах" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="mono">Этапы</div><h2>Как идёт ремонт</h2></div>
+      </div>
+      <div class="steps">
+        <div class="step"><h3>Замер</h3><p>Бесплатно. Лазерный замер и обмерный план в день визита.</p></div>
+        <div class="step"><h3>Смета</h3><p>Постатейная, с объёмами и расценкой по каждой позиции.</p></div>
+        <div class="step"><h3>Договор</h3><p>Фиксированная расценка, график работ, ответственность за сроки.</p></div>
+        <div class="step"><h3>Черновые работы</h3><p>Демонтаж, стены, электрика, сантехника, стяжка.</p></div>
+        <div class="step"><h3>Скрытые работы</h3><p>Фото каждой трассы до закрытия стен, схемы в архив.</p></div>
+        <div class="step"><h3>Чистовые работы</h3><p>Плитка, покраска, полы, двери, свет.</p></div>
+        <div class="step"><h3>Приёмка</h3><p>По чек-листу, с правилом, уровнем и мегаомметром.</p></div>
+        <div class="step"><h3>Уборка и ключи</h3><p>Генеральная уборка и гарантийный паспорт квартиры.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="lead">
+    <div class="wrap">
+      <div class="cta-box" id="contact">
+        <div>
+          <div class="mono">Бесплатный замер</div>
+          <h2>Обсудим ваш проект</h2>
+          <p class="lead" style="margin-top:16px">Инженер приедет, сделает замер и обмерный план. После этого вы получите постатейную смету. Если не подпишете договор, обмерный план останется у вас.</p>
+          <div class="contacts">
+            <div><span class="mono">Телефон</span><b><a href="tel:+79656109109" style="text-decoration:none">+7 965 610-91-09</a></b></div>
+            <div><span class="mono">Электронная почта</span><b><a href="mailto:z109109z@gmail.com" style="text-decoration:none;text-transform:none">z109109z@gmail.com</a></b></div>
+          </div>
+          <div class="msg">
+            <a class="tg" href="https://t.me/+79656109109" target="_blank" rel="noopener">Telegram</a>
+            <a class="wa" href="https://wa.me/79656109109" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="mx" href="https://max.ru/u/f9LHodD0cOJtxExRxXfRDUpJuVhRXKote5mQpIspn0BRSNDShJHzEzCQXgc" target="_blank" rel="noopener">MAX</a>
+          </div>
+          <p class="msg-note">Telegram и WhatsApp: +7 965 610-91-09 · MAX: +7 927 046-80-94</p>
+        </div>
+        <form class="lead-form" id="leadForm" name="zayavka" method="POST" action="https://api.web3forms.com/submit" novalidate>
+          <p hidden><label>Не заполняйте: <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></label></p>
+          <div class="field"><span class="mono">На каком вы этапе?</span>
+            <div class="stage">
+              <input type="radio" name="st" id="s1" value="Нет проекта" checked><label for="s1">Нет проекта</label>
+              <input type="radio" name="st" id="s2" value="Есть дизайн-проект"><label for="s2">Есть дизайн-проект</label>
+              <input type="radio" name="st" id="s3" value="Ремонт уже идёт"><label for="s3">Ремонт уже идёт</label>
+              <input type="radio" name="st" id="s4" value="Получаю ключи"><label for="s4">Скоро получаю ключи</label>
+            </div>
+          </div>
+          <div class="two">
+            <div class="field"><label for="nm">Имя</label><input id="nm" name="nm" autocomplete="given-name" required></div>
+            <div class="field"><label for="ph">Телефон</label><input id="ph" name="ph" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" maxlength="18" required></div>
+          </div>
+          <div class="field"><label for="ds">Район или ЖК</label><input id="ds" name="ds" placeholder="Например, Советский район"></div>
+          <div class="field"><label for="cm">Что хотите сделать</label><textarea id="cm" name="cm" placeholder="Ремонт под ключ в новостройке"></textarea></div>
+          <label class="agree" for="pd"><input type="checkbox" id="pd" name="pd" required><span>Я даю <a href="consent.html" target="_blank">согласие на обработку персональных данных</a> и ознакомлен(а) с <a href="privacy.html" target="_blank">политикой конфиденциальности</a></span></label>
+          <label class="agree" for="ads"><input type="checkbox" id="ads" name="ads"><span>Хочу получать новости и предложения (<a href="consent.html#ads" target="_blank">согласие на рассылку</a>, по желанию)</span></label>
+          <button class="btn" type="submit">Подать заявку</button>
+          <p class="ok" id="ok" hidden></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap" style="flex-direction:column">
+    <span>Engineer Kazan · ремонт квартир в Казани · <a href="tel:+79656109109">+7 965 610-91-09</a> · <a href="mailto:z109109z@gmail.com">z109109z@gmail.com</a></span>
+    <span><a href="privacy.html">Политика конфиденциальности</a> · <a href="consent.html">Согласие на обработку данных</a></span>
+    <span>На сайте фотографии наших объектов</span>
+  </div>
+</footer>
+
+<div class="cookie" id="cookie" role="region" aria-label="Файлы cookie" hidden>
+  <p>Мы используем cookie и сервис Яндекс Метрика, чтобы сайт работал и становился удобнее. Подробнее в <a href="privacy.html">политике конфиденциальности</a>.</p>
+  <div class="btns"><button class="btn" type="button" id="ckAll">Понятно</button></div>
+</div>
+
+<script>
+/* Мобильное меню */
+(function(){
+  var btn=document.getElementById('menuBtn'),nav=document.getElementById('nav');
+  function set(open){nav.classList.toggle('open',open);btn.setAttribute('aria-expanded',open);btn.setAttribute('aria-label',open?'Закрыть меню':'Открыть меню');}
+  btn.addEventListener('click',function(){set(!nav.classList.contains('open'));});
+  nav.addEventListener('click',function(e){if(e.target.closest('a'))set(false);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false);});
+})();
+
+/* Яндекс Метрика: загружается сразу, окно про cookie только уведомляет */
+var YM_ID=113336440;
+function loadMetrika(){
+  if(!YM_ID||window.ym)return;
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();
+  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window,document,'script','https://mc.yandex.ru/metrika/tag.js','ym');
+  ym(YM_ID,'init',{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
+}
+function goal(name){if(window.ym&&YM_ID)ym(YM_ID,'reachGoal',name);}
+document.addEventListener('click',function(e){var a=e.target.closest('a[href^="tel:"]');if(a)goal('phone');});
+document.addEventListener('click',function(e){if(e.target.closest('.msg a, .hmsg a'))goal('messenger');});
+
+(function(){
+  var box=document.getElementById('cookie'),KEY='ek-cookie';
+  var saved=null;try{saved=localStorage.getItem(KEY);}catch(e){}
+  if(!saved)box.hidden=false;
+  loadMetrika();
+  document.getElementById('ckAll').addEventListener('click',function(){try{localStorage.setItem(KEY,'ok');}catch(e){}box.hidden=true;});
+})();
+/* Кнопка «Оставить заявку» в карточке услуги: подставляет услугу в форму */
+document.addEventListener('click',function(e){
+  var b=e.target.closest('.svc-card .order, .order-ceil');if(!b)return;
+  var cm=document.getElementById('cm');cm.value='Нужно: '+b.getAttribute('data-svc')+'. ';
+  document.getElementById('lead').scrollIntoView({behavior:'smooth'});
+  setTimeout(function(){document.getElementById('nm').focus({preventScroll:true});},600);
+});
+
+/* Телефон: маска +7 (XXX) XXX-XX-XX и проверка, что номер российский и полный */
+function phoneDigits(v){var d=v.replace(/\D/g,'');if(d.charAt(0)==='8')d='7'+d.slice(1);else if(d.charAt(0)==='9')d='7'+d;return d.slice(0,11);}
+function phoneFormat(d){if(!d)return '';var r='+7';if(d.length>1)r+=' ('+d.slice(1,4);if(d.length>=4)r+=')';if(d.length>4)r+=' '+d.slice(4,7);if(d.length>7)r+='-'+d.slice(7,9);if(d.length>9)r+='-'+d.slice(9,11);return r;}
+function phoneValid(d){return d.length===11&&d.charAt(0)==='7'&&/[3489]/.test(d.charAt(1))&&!/^7(\d)\1{9}$/.test(d);}
+(function(){
+  var ph=document.getElementById('ph');
+  ph.addEventListener('input',function(){ph.value=phoneFormat(phoneDigits(ph.value));});
+  ph.addEventListener('focus',function(){if(!ph.value)ph.value='+7';});
+  ph.addEventListener('blur',function(){if(ph.value==='+7')ph.value='';});
+})();
+
+/* Откуда пришёл посетитель: запоминаем метки рекламы, чтобы видеть их в письме с заявкой */
+var formOpenedAt=Date.now();
+(function(){
+  try{
+    var p=new URLSearchParams(location.search),src=[];
+    ['utm_source','utm_medium','utm_campaign','utm_term','yclid'].forEach(function(k){if(p.get(k))src.push(k+'='+p.get(k));});
+    if(src.length)sessionStorage.setItem('ek-src',src.join(' & '));
+    else if(!sessionStorage.getItem('ek-src'))sessionStorage.setItem('ek-src',document.referrer?('переход с '+document.referrer):'прямой заход');
+  }catch(e){}
+})();
+
+document.getElementById('leadForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  var ok=document.getElementById('ok'),nm=document.getElementById('nm').value.trim(),ph=phoneDigits(document.getElementById('ph').value);
+  if(!nm){ok.textContent='Укажите имя, чтобы инженер знал, как к вам обращаться.';ok.hidden=false;return;}
+  if(!phoneValid(ph)){ok.textContent='Проверьте номер телефона: нужен российский номер из 11 цифр, например +7 (965) 610-91-09.';ok.hidden=false;document.getElementById('ph').focus();return;}
+  /* Боты заполняют форму за секунды — такие заявки молча не отправляем */
+  if(Date.now()-formOpenedAt<4000||this.botcheck.checked){ok.textContent='Спасибо! Заявка отправлена. Инженер позвонит вам в ближайшее время.';ok.hidden=false;this.reset();return;}
+  if(!document.getElementById('pd').checked){ok.textContent='Отметьте согласие на обработку персональных данных. Без него мы не можем принять заявку.';ok.hidden=false;return;}
+  var btn=this.querySelector('button[type=submit]');btn.disabled=true;ok.textContent='Отправляем заявку…';ok.hidden=false;
+  /* Заявки уходят через Web3Forms на почту, привязанную к ключу */
+  var f=this,val=function(id){return document.getElementById(id).value.trim();},st=f.querySelector('input[name=st]:checked');
+  var data={
+    access_key:'83f66aa9-b4dc-42be-94de-97bebb11f67a',
+    subject:'Новая заявка с сайта Engineer Kazan: '+nm,
+    from_name:'Сайт Engineer Kazan',
+    botcheck:f.botcheck.checked,
+    'Имя':nm,
+    'Телефон':phoneFormat(ph),
+    'Этап':st?st.value:'',
+    'Район или ЖК':val('ds'),
+    'Что хотят сделать':val('cm'),
+    'Согласие на обработку ПД':'да',
+    'Согласие на рассылку':document.getElementById('ads').checked?'да':'нет',
+    'Источник':(function(){try{return sessionStorage.getItem('ek-src')||'';}catch(e){return '';}})(),
+    'Заполнял форму, сек':Math.round((Date.now()-formOpenedAt)/1000)
+  };
+  /* Дубль заявки в Telegram через Cloudflare Worker (адрес вписывается после настройки, см. папку telegram) */
+  var TG_URL='';
+  if(TG_URL){try{fetch(TG_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)}).catch(function(){});}catch(err){}}
+  fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)})
+    .then(function(r){return r.json().then(function(j){if(!r.ok||!j.success)throw 0;});})
+    .then(function(){ok.textContent='Спасибо! Заявка отправлена. Инженер позвонит вам в ближайшее время.';goal('lead');f.reset();})
+    .catch(function(){ok.textContent='Не удалось отправить заявку. Позвоните нам: +7 965 610-91-09 или напишите на z109109z@gmail.com.';})
+    .then(function(){btn.disabled=false;});
+});
+
+/* Фоновое видео: при «уменьшении движения» показываем неподвижный кадр */
+(function(){
+  var v=document.getElementById('bgv');if(!v)return;
+  var rm=matchMedia('(prefers-reduced-motion: reduce)');
+  function apply(){if(rm.matches){v.pause();}else{var p=v.play();if(p&&p.catch)p.catch(function(){});}}
+  apply();if(rm.addEventListener)rm.addEventListener('change',apply);
+})();
+</script>
+</body>
+</html>
