@@ -247,6 +247,27 @@ nav a{text-decoration:none;color:var(--muted);white-space:nowrap} nav a:hover{co
 .hmsg .tg{background:#2AABEE}.hmsg .wa{background:#25D366}.hmsg .mx{background:#7B5CFF}
 .hcontact{display:flex;align-items:center;gap:12px;margin-left:auto}
 @media (max-width:460px){.hmsg{gap:4px}.hmsg a{width:28px;height:28px}.hmsg a svg{width:15px;height:15px}}
+/* Узкие экраны и крупный шрифт в телефоне: всё в шапке должно помещаться */
+@media (max-width:440px){
+  .bar{gap:6px}
+  .logo{font-size:14px;letter-spacing:.05em;min-width:0}
+  .menu-btn{width:36px;height:36px;flex:none}
+  .hmsg{gap:4px;flex:none}
+  .hmsg a{width:28px;height:28px}
+  .call-top{flex:none}
+}
+@media (max-width:360px){
+  .logo{font-size:12px;letter-spacing:.02em}
+  .menu-btn{width:32px;height:32px}
+  .hmsg a{width:26px;height:26px}
+  .hmsg a svg{width:14px;height:14px}
+  .call-top{width:34px!important;height:34px!important}
+}
+@media (max-width:400px){
+  .btn{white-space:normal;text-align:center;max-width:100%}
+  h1,h2,h3,.eyebrow{overflow-wrap:anywhere}
+  .mono{overflow-wrap:anywhere}
+}
 /* Кнопка звонка: в шапке и закреплённая панель на телефоне */
 .call-top{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink);font:500 15px var(--f-body);white-space:nowrap}
 .call-top svg{width:18px;height:18px;color:var(--accent)}
