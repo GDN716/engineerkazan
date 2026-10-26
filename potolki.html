@@ -97,6 +97,15 @@ details p{color:var(--muted);margin:10px 0 0}
 
 /* Форма */
 .lead-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,56px)}
+.rev-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+.rev-points{margin:14px 0 0;padding-left:18px;display:grid;gap:6px;color:var(--muted)}
+.rev-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.rev-list{display:grid;gap:12px}
+.rev-item{margin:0;background:var(--glass);border:1px solid var(--line);border-radius:6px;padding:22px 20px}
+.rev-item blockquote{margin:0;font-size:17px;line-height:1.5}
+.rev-item figcaption{margin-top:12px;font-size:13px;color:var(--muted)}
+.rev-item figcaption a{color:inherit}
+@media (max-width:860px){.rev-grid{grid-template-columns:1fr}}
 @media (max-width:860px){.lead-grid{grid-template-columns:1fr}}
 form{display:grid;gap:14px}
 label.f{display:grid;gap:6px;font-size:14px;color:var(--muted)}
@@ -211,6 +220,33 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-betw
         <div class="card"><h3>Бесплатный замер</h3><p>Приедем в удобное время, покажем образцы полотен.</p></div>
         <div class="card"><h3>Договор</h3><p>Фиксируем цену и срок. Цена после договора не растёт.</p></div>
         <div class="card"><h3>Монтаж за 1 день</h3><p>Комната — за несколько часов, без пыли. Убираем за собой.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="otzyvy">
+    <div class="wrap">
+      <div class="rev-grid">
+        <div>
+          <div class="mono">Отзывы</div>
+          <h2>Что говорят клиенты</h2>
+          <p>Мы не пишем отзывы за клиентов. Здесь только то, что люди оставили сами на открытых площадках &mdash; проверить можно по ссылке.</p>
+          <ul class="rev-points">
+            <li>Отзыв виден в карточке 2ГИС и на Яндекс Картах, мы его не редактируем</li>
+            <li>На каждый отзыв отвечаем сами, в том числе на критику</li>
+            <li>Делали у нас потолок? Расскажите, как всё прошло &mdash; это очень помогает</li>
+          </ul>
+          <div class="rev-actions">
+            <a class="btn" href="https://yandex.ru/maps/org/91211030840/reviews/" target="_blank" rel="noopener">Оставить отзыв на Яндекс Картах</a>
+            <a class="btn ghost" href="https://2gis.ru/kazan/firm/70000001118650999/tab/reviews" target="_blank" rel="noopener">Отзывы в 2ГИС</a>
+          </div>
+        </div>
+        <div class="rev-list">
+          <figure class="rev-item">
+            <blockquote>Потолки и кондиционер выполнили качественно и быстро, рекомендую</blockquote>
+            <figcaption>Лилия &middot; 19 октября 2026 &middot; <a href="https://2gis.ru/kazan/firm/70000001118650999/tab/reviews" target="_blank" rel="noopener">2ГИС</a></figcaption>
+          </figure>
+        </div>
       </div>
     </div>
   </section>
