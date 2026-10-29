@@ -1,2 +1,5 @@
 # Гасим дубль сайта: netlify.app -> основной домен engineerkazan.ru
 https://engineerkazan.netlify.app/*  https://engineerkazan.ru/:splat  301!
+
+# Короткий адрес страницы вакансии для рекламы
+/kamenshchiki  /kamenshchiki.html  200
