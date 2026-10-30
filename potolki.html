@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Натяжные потолки в Казани — комната 18 м² под ключ 14 000 ₽ | Engineer Kazan</title>
-<meta name="description" content="Натяжной потолок в комнату 18 м² под ключ за 14 000 ₽: полотно, профиль, 6 светильников и установка люстры. Замер бесплатно, монтаж за 1 день, договор и гарантия 1 год. Казань.">
+<title>Теневые и парящие потолки, световые линии в Казани — Engineer Kazan</title>
+<meta name="description" content="Теневые и парящие натяжные потолки, световые линии и треки в Казани. Делаем сами, без посредников. Бесплатный замер, цена фиксируется в договоре, гарантия 1 год.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Натяжные потолки в Казани — 14 000 ₽ за комнату 18 м²">
-<meta property="og:description" content="С материалом и 6 светильниками. Замер бесплатно, монтаж за 1 день, гарантия 1 год.">
+<meta property="og:title" content="Теневые и парящие потолки, световые линии в Казани">
+<meta property="og:description" content="Премиальные натяжные потолки под ключ. Бесплатный замер, договор, гарантия 1 год.">
 <meta property="og:image" content="https://engineerkazan.ru/img/ceil-track.jpg">
 <meta property="og:url" content="https://engineerkazan.ru/potolki.html">
 <meta property="og:locale" content="ru_RU">
@@ -17,10 +17,9 @@
 {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Натяжной потолок под ключ, комната 18 м²",
+  "name": "Теневые и парящие натяжные потолки, световые линии",
   "areaServed": {"@type": "City", "name": "Казань"},
-  "provider": {"@type": "HomeAndConstructionBusiness", "name": "Engineer Kazan", "telephone": "+7-965-610-91-09", "url": "https://engineerkazan.ru/"},
-  "offers": {"@type": "Offer", "price": "14000", "priceCurrency": "RUB"}
+  "provider": {"@type": "HomeAndConstructionBusiness", "name": "Engineer Kazan", "telephone": "+7-965-610-91-09", "url": "https://engineerkazan.ru/"}
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -77,7 +76,7 @@ header{position:sticky;top:0;z-index:20;background:rgba(7,7,8,.85);backdrop-filt
 .note{font-size:14px;color:var(--muted);margin-top:14px}
 
 /* Карточки */
-.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 @media (max-width:860px){.cards{grid-template-columns:1fr}}
 .card{background:var(--glass);border:1px solid var(--line);border-radius:6px;padding:22px 20px;display:flex;flex-direction:column;gap:8px}
 .card p{margin:0;color:var(--muted);font-size:15px}
@@ -137,6 +136,19 @@ textarea{min-height:90px;resize:vertical}
   h1,h2,h3{overflow-wrap:anywhere}
 }
 @media (max-width:299px){.tel{display:none}}
+/* Быстрый расчёт */
+.quiz{background:var(--glass);border:1px solid var(--accent);border-radius:8px;padding:clamp(18px,3vw,32px)}
+.q-progress{height:4px;background:var(--line);border-radius:4px;margin:6px 0 20px;overflow:hidden}
+.q-progress i{display:block;height:100%;width:25%;background:var(--accent);transition:width .3s}
+.q-step h3{font-size:clamp(20px,2.6vw,26px);margin-bottom:16px}
+.q-opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (max-width:560px){.q-opts{grid-template-columns:1fr}}
+.q-opts label{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:6px;padding:14px;cursor:pointer;font-size:16px}
+.q-opts input{accent-color:var(--accent);width:18px;height:18px;flex:none}
+.q-opts label:has(input:checked){border-color:var(--accent);background:rgba(226,134,74,.1)}
+.q-nav{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.q-nav .back{background:none;border:1px solid var(--line);color:var(--ink)}
+.q-final{display:grid;gap:12px;max-width:520px}
 footer{border-top:1px solid var(--line);padding:28px 0 40px;font-size:13px;color:var(--muted)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
 
@@ -168,17 +180,18 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-betw
     <div class="wrap hero-grid">
       <div>
         <div class="mono">Натяжные потолки в Казани</div>
-        <h1 style="margin-top:12px">Натяжной потолок в комнату за 1 день</h1>
-        <div class="price">14 000 ₽<small>комната 18 м² под ключ — всё с материалом</small></div>
+        <h1 style="margin-top:12px">Теневые и парящие потолки, световые линии</h1>
+        <p style="color:var(--muted);font-size:18px;margin:16px 0 0">Потолки, которые делают интерьер дорогим: ровная тень у стены вместо плинтуса, мягкая подсветка по периметру, встроенные линии света и треки. Делаем сами, без посредников.</p>
+        <div class="price" style="font-size:clamp(28px,4.5vw,40px)">Цена — после бесплатного замера<small>фиксируем в договоре, после подписания не растёт</small></div>
         <ul class="incl">
-          <li>Полотно: матовое, сатиновое или глянцевое</li>
-          <li>Профиль по периметру</li>
-          <li>6 светильников и установка люстры</li>
-          <li>Монтаж и уборка после работы</li>
+          <li>Замер, подбор света и материалов — бесплатно</li>
+          <li>Полотна матовые, сатиновые, глянцевые</li>
+          <li>Монтаж под ключ: профиль, свет, уборка</li>
+          <li>Договор и гарантия 1 год</li>
         </ul>
         <div class="actions">
-          <a class="btn" href="tel:+79656109109">Позвонить</a>
-          <a class="btn ghost" href="#zamer">Бесплатный замер</a>
+          <a class="btn" href="#raschet">Узнать стоимость</a>
+          <a class="btn ghost" href="tel:+79656109109">Позвонить</a>
         </div>
         <div class="badges"><span>Замер бесплатно</span><span>Договор</span><span>Гарантия 1 год</span><span>Цена не растёт</span></div>
       </div>
@@ -203,11 +216,12 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-betw
 
   <section>
     <div class="wrap">
-      <h2>Что ещё делаем</h2>
+      <h2>Что делаем</h2>
       <div class="cards">
         <div class="card"><h3>Световые линии</h3><p>Встроенные линии света в потолке — вместо люстры или вместе с ней.</p><span class="p">Цена — по замеру</span></div>
         <div class="card"><h3>Парящий потолок</h3><p>Подсветка по периметру: потолок будто висит в воздухе.</p><span class="p">Цена — по замеру</span></div>
         <div class="card"><h3>Теневой профиль и треки</h3><p>Ровная тёмная линия у стены без плинтуса, трековые светильники.</p><span class="p">Цена — по замеру</span></div>
+        <div class="card"><h3>Классический потолок</h3><p>Матовое, сатиновое или глянцевое полотно со светильниками и люстрой.</p><span class="p">Цена — по замеру</span></div>
       </div>
     </div>
   </section>
@@ -221,6 +235,71 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-betw
         <div class="card"><h3>Договор</h3><p>Фиксируем цену и срок. Цена после договора не растёт.</p></div>
         <div class="card"><h3>Монтаж за 1 день</h3><p>Комната — за несколько часов, без пыли. Убираем за собой.</p></div>
       </div>
+    </div>
+  </section>
+
+  <section id="raschet">
+    <div class="wrap">
+      <div class="mono">Быстрый расчёт</div>
+      <h2 style="margin-top:10px">Узнайте стоимость вашего потолка</h2>
+      <p style="color:var(--muted);margin-top:-8px">4 вопроса, меньше минуты. Посчитаем и перезвоним с ценой — бесплатно и без обязательств.</p>
+      <form class="quiz" id="quizForm" novalidate>
+        <div class="q-progress"><i id="qBar"></i></div>
+        <div class="q-step" data-step="1">
+          <h3>1. Какой потолок нужен?</h3>
+          <div class="q-opts">
+            <label><input type="radio" name="q1" value="Теневой">Теневой (без плинтуса)</label>
+            <label><input type="radio" name="q1" value="Парящий с подсветкой">Парящий с подсветкой</label>
+            <label><input type="radio" name="q1" value="Со световыми линиями">Со световыми линиями</label>
+            <label><input type="radio" name="q1" value="Классический">Классический</label>
+            <label><input type="radio" name="q1" value="Не знаю, нужна консультация">Не знаю, нужна консультация</label>
+          </div>
+        </div>
+        <div class="q-step" data-step="2" hidden>
+          <h3>2. Какая площадь?</h3>
+          <div class="q-opts">
+            <label><input type="radio" name="q2" value="12–20 м²">12–20 м²</label>
+            <label><input type="radio" name="q2" value="20–40 м²">20–40 м²</label>
+            <label><input type="radio" name="q2" value="40–70 м²">40–70 м²</label>
+            <label><input type="radio" name="q2" value="Больше 70 м² / вся квартира или дом">Больше 70 м² / вся квартира или дом</label>
+            <label><input type="radio" name="q2" value="Не знаю">Не знаю</label>
+          </div>
+        </div>
+        <div class="q-step" data-step="3" hidden>
+          <h3>3. Какой нужен свет?</h3>
+          <div class="q-opts">
+            <label><input type="radio" name="q3" value="Точечные светильники и люстра">Точечные светильники и люстра</label>
+            <label><input type="radio" name="q3" value="Световые линии">Световые линии</label>
+            <label><input type="radio" name="q3" value="Трековые светильники">Трековые светильники</label>
+            <label><input type="radio" name="q3" value="Подсветка по периметру">Подсветка по периметру</label>
+            <label><input type="radio" name="q3" value="Пока не знаю">Пока не знаю</label>
+          </div>
+        </div>
+        <div class="q-step" data-step="4" hidden>
+          <h3>4. Когда планируете?</h3>
+          <div class="q-opts">
+            <label><input type="radio" name="q4" value="В ближайшие 2 недели">В ближайшие 2 недели</label>
+            <label><input type="radio" name="q4" value="В течение месяца">В течение месяца</label>
+            <label><input type="radio" name="q4" value="Идёт ремонт, позже">Идёт ремонт, позже</label>
+            <label><input type="radio" name="q4" value="Просто узнаю цену">Просто узнаю цену</label>
+          </div>
+        </div>
+        <div class="q-step" data-step="5" hidden>
+          <h3>Куда прислать расчёт?</h3>
+          <div class="q-final">
+            <p hidden><label>Не заполняйте: <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></label></p>
+            <label class="f">Имя<input type="text" id="qnm" autocomplete="given-name"></label>
+            <label class="f">Телефон<input type="tel" id="qph" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" maxlength="18"></label>
+            <label class="agree"><input type="checkbox" id="qpd"><span>Я даю <a href="consent.html" target="_blank">согласие на обработку персональных данных</a> и ознакомлен(а) с <a href="privacy.html" target="_blank">политикой конфиденциальности</a></span></label>
+          </div>
+        </div>
+        <div class="q-nav">
+          <button class="btn back" type="button" id="qBack" hidden>Назад</button>
+          <button class="btn" type="button" id="qNext">Далее</button>
+          <button class="btn" type="submit" id="qSend" hidden>Получить расчёт</button>
+        </div>
+        <p class="ok" id="qok" hidden></p>
+      </form>
     </div>
   </section>
 
@@ -254,8 +333,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-betw
   <section>
     <div class="wrap">
       <h2>Частые вопросы</h2>
-      <details><summary>Что входит в 14 000 ₽?</summary><p>Комната 18 м² под ключ: полотно, профиль по периметру, 6 светильников, установка люстры, монтаж и уборка. Всё с материалом, без доплат.</p></details>
-      <details><summary>А если комната больше или меньше?</summary><p>Посчитаем точно на бесплатном замере. Позвоните и скажите площадь — назовём примерную цену сразу по телефону.</p></details>
+      <details><summary>Сколько стоит?</summary><p>Зависит от площади, типа потолка и света. Ответьте на 4 вопроса в «Быстром расчёте» или позвоните — сориентируем по телефону, а точную цену назовём после бесплатного замера и зафиксируем в договоре.</p></details>
+      <details><summary>Чем теневой потолок отличается от обычного?</summary><p>У обычного потолка у стены стоит пластиковая вставка или плинтус. У теневого — ровная тёмная щель, потолок выглядит аккуратно и дорого. Парящий — с подсветкой по периметру, будто висит в воздухе.</p></details>
       <details><summary>Сколько длится монтаж?</summary><p>Одна комната — несколько часов. Полотно изготавливаем после замера, монтаж в удобный вам день.</p></details>
       <details><summary>Какая гарантия?</summary><p>Работаем по договору, гарантия 1 год.</p></details>
       <details><summary>Куда выезжаете?</summary><p>По всей Казани. Работаем каждый день с 8:00 до 22:00.</p></details>
@@ -281,7 +360,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-betw
         <p hidden><label>Не заполняйте: <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></label></p>
         <label class="f">Имя<input type="text" id="nm" autocomplete="given-name" required></label>
         <label class="f">Телефон<input type="tel" id="ph" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" maxlength="18" required></label>
-        <label class="f">Площадь и пожелания (необязательно)<textarea id="cm" placeholder="Например: спальня 15 м², матовый, 6 светильников"></textarea></label>
+        <label class="f">Площадь и пожелания (необязательно)<textarea id="cm" placeholder="Например: гостиная 25 м², теневой потолок, световые линии"></textarea></label>
         <label class="agree"><input type="checkbox" id="pd" required><span>Я даю <a href="consent.html" target="_blank">согласие на обработку персональных данных</a> и ознакомлен(а) с <a href="privacy.html" target="_blank">политикой конфиденциальности</a></span></label>
         <button class="btn" type="submit">Вызвать замерщика бесплатно</button>
         <p class="ok" id="ok" hidden></p>
@@ -297,7 +376,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-betw
   </div>
 </footer>
 
-<div class="callbar"><a class="c1" href="tel:+79656109109">Позвонить</a><a class="c2" href="#zamer">Бесплатный замер</a></div>
+<div class="callbar"><a class="c1" href="tel:+79656109109">Позвонить</a><a class="c2" href="#raschet">Узнать цену</a></div>
 
 <script>
 /* Яндекс Метрика (тот же счётчик, что на основном сайте) */
@@ -361,6 +440,53 @@ document.getElementById('leadForm').addEventListener('submit',function(e){
     .catch(function(){ok.textContent='Не удалось отправить заявку. Позвоните нам: +7 965 610-91-09.';})
     .then(function(){btn.disabled=false;});
 });
+
+/* Быстрый расчёт: ответы и телефон уходят на почту, цены на сайте не показываются */
+(function(){
+  var f=document.getElementById('quizForm');if(!f)return;
+  var steps=[].slice.call(f.querySelectorAll('.q-step')),cur=0,opened=Date.now();
+  var next=document.getElementById('qNext'),back=document.getElementById('qBack'),send=document.getElementById('qSend'),bar=document.getElementById('qBar'),ok=document.getElementById('qok');
+  var qph=document.getElementById('qph');
+  qph.addEventListener('input',function(){qph.value=phoneFormat(phoneDigits(qph.value));});
+  qph.addEventListener('focus',function(){if(!qph.value)qph.value='+7';});
+  qph.addEventListener('blur',function(){if(qph.value==='+7')qph.value='';});
+  function show(i){
+    cur=i;steps.forEach(function(s,k){s.hidden=k!==i;});
+    back.hidden=i===0;next.hidden=i===steps.length-1;send.hidden=i!==steps.length-1;
+    bar.style.width=Math.round((i+1)/steps.length*100)+'%';ok.hidden=true;
+    if(i===1)goal('quiz_start');
+  }
+  function answered(i){var q=steps[i].querySelector('input[type=radio]');return !q||!!f.querySelector('input[name="'+q.name+'"]:checked');}
+  next.addEventListener('click',function(){if(!answered(cur)){ok.textContent='Выберите один из вариантов.';ok.hidden=false;return;}show(cur+1);});
+  back.addEventListener('click',function(){show(cur-1);});
+  f.addEventListener('change',function(e){if(e.target.type==='radio'&&cur<steps.length-1)setTimeout(function(){show(cur+1);},250);});
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var nm=document.getElementById('qnm').value.trim(),ph=phoneDigits(qph.value);
+    if(!nm){ok.textContent='Укажите имя.';ok.hidden=false;return;}
+    if(!phoneValid(ph)){ok.textContent='Проверьте номер телефона: нужен российский номер из 11 цифр.';ok.hidden=false;return;}
+    if(!document.getElementById('qpd').checked){ok.textContent='Отметьте согласие на обработку персональных данных.';ok.hidden=false;return;}
+    if(Date.now()-opened<4000||f.botcheck.checked){ok.textContent='Спасибо! Посчитаем и перезвоним.';ok.hidden=false;return;}
+    var v=function(n){var x=f.querySelector('input[name="'+n+'"]:checked');return x?x.value:'';};
+    send.disabled=true;ok.textContent='Отправляем…';ok.hidden=false;
+    var data={
+      access_key:'83f66aa9-b4dc-42be-94de-97bebb11f67a',
+      subject:'Расчёт потолка: '+nm+' — '+v('q1')+', '+v('q2'),
+      from_name:'Сайт Engineer Kazan — быстрый расчёт',
+      botcheck:false,
+      'Имя':nm,'Телефон':phoneFormat(ph),
+      'Тип потолка':v('q1'),'Площадь':v('q2'),'Свет':v('q3'),'Когда':v('q4'),
+      'Согласие на обработку ПД':'да',
+      'Источник':(function(){try{return sessionStorage.getItem('ek-src')||'';}catch(e){return '';}})()
+    };
+    fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)})
+      .then(function(r){return r.json().then(function(j){if(!r.ok||!j.success)throw 0;});})
+      .then(function(){ok.textContent='Спасибо! Посчитаем стоимость и перезвоним в ближайшее время.';goal('quiz');goal('lead');f.reset();show(0);ok.hidden=false;ok.textContent='Спасибо! Посчитаем стоимость и перезвоним в ближайшее время.';})
+      .catch(function(){ok.textContent='Не удалось отправить. Позвоните нам: +7 965 610-91-09.';})
+      .then(function(){send.disabled=false;});
+  });
+  show(0);
+})();
 </script>
 </body>
 </html>
