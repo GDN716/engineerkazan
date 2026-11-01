@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Каталог светильников для натяжных потолков — Engineer Kazan</title>
+<meta name="description" content="Светильники для натяжных потолков: магнитные и обычные треки, встраиваемые, накладные, люстры, LED-панели. Подберём свет и установим под ключ в Казани.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Каталог светильников для натяжных потолков">
+<meta property="og:image" content="https://engineerkazan.ru/img/ceil-track.jpg">
+<meta property="og:url" content="https://engineerkazan.ru/svetilniki.html">
+<meta property="og:locale" content="ru_RU">
+<link rel="canonical" href="https://engineerkazan.ru/svetilniki.html">
+<meta name="theme-color" content="#070708">
+<style>
+:root{
+  --bg:#070708; --ink:#EFEAE4; --muted:#A9A39C; --line:rgba(239,234,228,.14);
+  --glass:rgba(255,255,255,.04); --accent:#E2864A; --accent-ink:#140B05;
+  --f-display:"Oswald","Arial Narrow",Impact,sans-serif; --f-body:"Golos Text",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 var(--f-body);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1120px,100% - 32px);margin-inline:auto}
+h1,h2,h3{font-family:var(--f-display);text-transform:uppercase;margin:0;line-height:1.05;font-weight:500;text-wrap:balance}
+h1{font-size:clamp(34px,6vw,64px)}
+h2{font-size:clamp(26px,3.6vw,40px);margin-bottom:22px}
+h3{font-size:20px}
+.mono{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+section{padding-block:clamp(48px,7vw,84px);border-top:1px solid var(--line)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:600 16px var(--f-body);padding:15px 26px;border-radius:999px;border:1px solid var(--accent);background:var(--accent);color:var(--accent-ink);text-decoration:none;cursor:pointer;white-space:nowrap}
+.btn.ghost{background:transparent;color:var(--ink);border-color:rgba(239,234,228,.5)}
+
+/* Шапка */
+header{position:sticky;top:0;z-index:20;background:rgba(7,7,8,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;height:62px}
+.logo{font-family:var(--f-display);font-weight:500;font-size:20px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none}
+.logo span{color:var(--accent)}
+.tel{font:600 17px var(--f-body);text-decoration:none;white-space:nowrap}
+.tel small{display:block;font-size:12px;font-weight:400;color:var(--muted)}
+
+/* Первый экран */
+.hero{padding-block:clamp(28px,5vw,64px);border-top:0}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,4vw,56px);align-items:center}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}}
+.price{margin:22px 0 6px;font-family:var(--f-display);font-size:clamp(44px,7vw,72px);line-height:1;color:var(--accent)}
+.price small{font-family:var(--f-body);font-size:16px;color:var(--muted);display:block;margin-top:6px}
+.incl{list-style:none;padding:0;margin:18px 0 26px;display:grid;gap:8px}
+.incl li{padding-left:28px;position:relative}
+.incl li::before{content:"✓";position:absolute;left:0;top:0;color:var(--accent);font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:6px}
+.badges{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:22px;color:var(--muted);font-size:14px}
+.badges span::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);margin-right:8px;vertical-align:middle}
+
+/* Фото */
+.gal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.gal img{width:100%;height:100%;aspect-ratio:4/5;object-fit:cover;border-radius:6px}
+@media (max-width:640px){.gal{grid-template-columns:1fr 1fr}.gal img:first-child{grid-column:1/-1;aspect-ratio:4/3}}
+.note{font-size:14px;color:var(--muted);margin-top:14px}
+
+/* Карточки */
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (max-width:860px){.cards{grid-template-columns:1fr}}
+.card{background:var(--glass);border:1px solid var(--line);border-radius:6px;padding:22px 20px;display:flex;flex-direction:column;gap:8px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.card .p{color:var(--accent);font-weight:600;margin-top:auto}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;counter-reset:s}
+@media (max-width:860px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.steps{grid-template-columns:1fr}}
+.steps .card{counter-increment:s}
+.steps .card h3::before{content:counter(s) ". ";color:var(--accent)}
+
+/* Вопросы */
+details{border-bottom:1px solid var(--line);padding:16px 0}
+summary{cursor:pointer;font-weight:600;font-size:17px;list-style:none}
+summary::after{content:"+";float:right;color:var(--accent);font-size:22px;line-height:1}
+details[open] summary::after{content:"−"}
+details p{color:var(--muted);margin:10px 0 0}
+
+/* Форма */
+.lead-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,56px)}
+.rev-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+.rev-points{margin:14px 0 0;padding-left:18px;display:grid;gap:6px;color:var(--muted)}
+.rev-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.rev-list{display:grid;gap:12px}
+.rev-item{margin:0;background:var(--glass);border:1px solid var(--line);border-radius:6px;padding:22px 20px}
+.rev-item blockquote{margin:0;font-size:17px;line-height:1.5}
+.rev-item figcaption{margin-top:12px;font-size:13px;color:var(--muted)}
+.rev-item figcaption a{color:inherit}
+@media (max-width:860px){.rev-grid{grid-template-columns:1fr}}
+@media (max-width:860px){.lead-grid{grid-template-columns:1fr}}
+form{display:grid;gap:14px}
+label.f{display:grid;gap:6px;font-size:14px;color:var(--muted)}
+input[type=text],input[type=tel],textarea{width:100%;font:16px var(--f-body);color:var(--ink);background:var(--glass);border:1px solid var(--line);border-radius:6px;padding:14px}
+textarea{min-height:90px;resize:vertical}
+.agree{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--muted)}
+.agree input{margin-top:3px;width:18px;height:18px;accent-color:var(--accent)}
+.ok{border:1px solid var(--accent);padding:14px;border-radius:6px;font-size:15px}
+.big-tel{font-family:var(--f-display);font-size:clamp(30px,4.5vw,44px);text-decoration:none;color:var(--accent)}
+
+/* Кнопки мессенджеров */
+.msg{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.msg a{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;border:1px solid var(--line);text-decoration:none;font:600 15px var(--f-body);color:var(--ink)}
+.msg a::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--c)}
+.msg .tg{--c:#2AABEE}.msg .wa{--c:#25D366}.msg .mx{--c:#7B5CFF}
+.msg-note{font-size:13px;color:var(--muted);margin-top:8px}
+/* Значки мессенджеров в шапке */
+.hmsg{display:flex;gap:6px;align-items:center}
+.hmsg a{width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;flex:none}
+.hmsg a svg{width:18px;height:18px}
+.hmsg .tg{background:#2AABEE}.hmsg .wa{background:#25D366}.hmsg .mx{background:#7B5CFF}
+.hcontact{display:flex;align-items:center;gap:12px;margin-left:auto}
+@media (max-width:460px){.hmsg{gap:4px}.hmsg a{width:28px;height:28px}.hmsg a svg{width:15px;height:15px}}
+@media (max-width:340px){
+  .logo{font-size:12px;letter-spacing:.02em}
+  .tel{font-size:12px}
+  .hmsg a{width:24px;height:24px}.hmsg a svg{width:13px;height:13px}
+  .btn{white-space:normal;text-align:center;max-width:100%}
+  h1,h2,h3{overflow-wrap:anywhere}
+}
+@media (max-width:299px){.tel{display:none}}
+/* Быстрый расчёт */
+.quiz{background:var(--glass);border:1px solid var(--accent);border-radius:8px;padding:clamp(18px,3vw,32px)}
+.q-progress{height:4px;background:var(--line);border-radius:4px;margin:6px 0 20px;overflow:hidden}
+.q-progress i{display:block;height:100%;width:25%;background:var(--accent);transition:width .3s}
+.q-step h3{font-size:clamp(20px,2.6vw,26px);margin-bottom:16px}
+.q-opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (max-width:560px){.q-opts{grid-template-columns:1fr}}
+.q-opts label{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:6px;padding:14px;cursor:pointer;font-size:16px}
+.q-opts input{accent-color:var(--accent);width:18px;height:18px;flex:none}
+.q-opts label:has(input:checked){border-color:var(--accent);background:rgba(226,134,74,.1)}
+.q-nav{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.q-nav .back{background:none;border:1px solid var(--line);color:var(--ink)}
+.q-final{display:grid;gap:12px;max-width:520px}
+footer{border-top:1px solid var(--line);padding:28px 0 40px;font-size:13px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+
+/* Закреплённая панель звонка на телефоне */
+.callbar{display:none}
+@media (max-width:760px){
+  .tel small{display:none}
+  .tel{font-size:15px}
+  @media (max-width:420px){.logo{font-size:15px;letter-spacing:.06em}.tel{font-size:14px}.hcontact{gap:8px}.bar{gap:8px}}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:25;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(7,7,8,.94);border-top:1px solid var(--line)}
+  .callbar a{flex:1;text-align:center;padding:14px 8px;border-radius:999px;font:600 16px var(--f-body);text-decoration:none}
+  .callbar .c1{background:var(--accent);color:var(--accent-ink)}
+  .callbar .c2{border:1px solid var(--line)}
+  body{padding-bottom:78px}
+}
+/* Каталог светильников */
+.tabs{position:sticky;top:62px;z-index:15;background:rgba(7,7,8,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.tabs .wrap{display:flex;gap:8px;overflow-x:auto;padding-block:10px;scrollbar-width:none}
+.tabs .wrap::-webkit-scrollbar{display:none}
+.tabs a{flex:none;padding:8px 14px;border:1px solid var(--line);border-radius:999px;text-decoration:none;font-size:14px;white-space:nowrap}
+.tabs a b{color:var(--muted);font-weight:400;margin-left:4px}
+.tabs a:hover{border-color:var(--accent)}
+.cat{scroll-margin-top:120px}
+.cat .lead{color:var(--muted);margin:-8px 0 22px;max-width:680px}
+.lamps{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.lamps figure{margin:0;background:#fff;border-radius:12px;aspect-ratio:1;display:flex;align-items:center;justify-content:center;padding:12px;overflow:hidden}
+.lamps img{max-height:100%;width:auto;object-fit:contain}
+.cta{background:var(--glass);border:1px solid var(--line);border-radius:18px;padding:clamp(20px,4vw,36px);display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between}
+.cta p{margin:8px 0 0;color:var(--muted);max-width:620px}
+@media (max-width:520px){.lamps{grid-template-columns:repeat(3,1fr);gap:6px}.lamps figure{padding:6px;border-radius:8px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="index.html">Engineer <span>Kazan</span></a>
+    <div class="hcontact"><div class="hmsg"><a class="tg" href="https://t.me/+79656109109" target="_blank" rel="noopener" aria-label="Написать в Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M9.6 15.2l-.4 4.1c.5 0 .8-.2 1-.5l2.5-2.4 5.1 3.7c.9.5 1.6.2 1.8-.9l3.3-15.4c.3-1.3-.5-1.9-1.4-1.6L1.9 9.5c-1.3.5-1.3 1.2-.2 1.6l5 1.6L18.3 5.4c.5-.3 1-.1.6.2z"/></svg></a><a class="wa" href="https://wa.me/79656109109" target="_blank" rel="noopener" aria-label="Написать в WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a><a class="mx" href="https://max.ru/u/f9LHodD0cOJtxExRxXfRDUpJuVhRXKote5mQpIspn0BRSNDShJHzEzCQXgc" target="_blank" rel="noopener" aria-label="Написать в MAX"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M5 18V6h2.6L12 12l4.4-6H19v12h-2.6v-7.6L12 16l-4.4-5.6V18z"/></svg></a></div><a class="tel" href="tel:+79656109109">+7 965 610-91-09<small>ежедневно 8:00–22:00</small></a></div>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Разделы каталога"><div class="wrap"><a href="#track-mag">Магнитные трековые <b>19</b></a><a href="#track">Трековые <b>33</b></a><a href="#vstr">Встраиваемые <b>89</b></a><a href="#nakl">Накладные <b>78</b></a><a href="#lustry">Люстры <b>58</b></a><a href="#panel">LED-панели <b>13</b></a><a href="#dekor">Декоративные <b>98</b></a></div></nav>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="mono">Свет для натяжных потолков</div>
+      <h1 style="margin-top:12px">Каталог светильников</h1>
+      <p style="color:var(--muted);font-size:18px;margin:16px 0 0;max-width:760px">388 моделей: треки, точечные светильники, люстры, панели. Цены не публикуем — они зависят от количества и схемы света. Понравилась модель? Сделайте снимок экрана и пришлите нам в мессенджер — подберём, посчитаем и установим вместе с потолком.</p>
+      <div class="actions" style="margin-top:22px;display:flex;flex-wrap:wrap;gap:12px">
+        <a class="btn" href="potolki.html#raschet">Рассчитать потолок со светом</a>
+        <a class="btn ghost" href="tel:+79656109109">Позвонить</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="track-mag" class="cat">
+    <div class="wrap">
+      <h2>Магнитные трековые</h2>
+      <p class="lead">Тонкие светильники на магнитный трек: линейные, точечные, поворотные. Можно переставлять без инструмента.</p>
+      <div class="lamps">
+        <figure><img src="img/svet/track-mag-01.jpg" alt="Магнитные трековые светильник" loading="lazy" width="304" height="114"></figure>
+        <figure><img src="img/svet/track-mag-02.jpg" alt="Магнитные трековые светильник" loading="lazy" width="210" height="120"></figure>
+        <figure><img src="img/svet/track-mag-03.jpg" alt="Магнитные трековые светильник" loading="lazy" width="303" height="218"></figure>
+        <figure><img src="img/svet/track-mag-04.jpg" alt="Магнитные трековые светильник" loading="lazy" width="286" height="214"></figure>
+        <figure><img src="img/svet/track-mag-05.jpg" alt="Магнитные трековые светильник" loading="lazy" width="281" height="234"></figure>
+        <figure><img src="img/svet/track-mag-06.jpg" alt="Магнитные трековые светильник" loading="lazy" width="147" height="290"></figure>
+        <figure><img src="img/svet/track-mag-07.jpg" alt="Магнитные трековые светильник" loading="lazy" width="186" height="216"></figure>
+        <figure><img src="img/svet/track-mag-08.jpg" alt="Магнитные трековые светильник" loading="lazy" width="111" height="287"></figure>
+        <figure><img src="img/svet/track-mag-09.jpg" alt="Магнитные трековые светильник" loading="lazy" width="149" height="178"></figure>
+        <figure><img src="img/svet/track-mag-10.jpg" alt="Магнитные трековые светильник" loading="lazy" width="199" height="113"></figure>
+        <figure><img src="img/svet/track-mag-11.jpg" alt="Магнитные трековые светильник" loading="lazy" width="202" height="162"></figure>
+        <figure><img src="img/svet/track-mag-12.jpg" alt="Магнитные трековые светильник" loading="lazy" width="249" height="136"></figure>
+        <figure><img src="img/svet/track-mag-13.jpg" alt="Магнитные трековые светильник" loading="lazy" width="251" height="101"></figure>
+        <figure><img src="img/svet/track-mag-14.jpg" alt="Магнитные трековые светильник" loading="lazy" width="237" height="127"></figure>
+        <figure><img src="img/svet/track-mag-15.jpg" alt="Магнитные трековые светильник" loading="lazy" width="134" height="192"></figure>
+        <figure><img src="img/svet/track-mag-16.jpg" alt="Магнитные трековые светильник" loading="lazy" width="122" height="174"></figure>
+        <figure><img src="img/svet/track-mag-17.jpg" alt="Магнитные трековые светильник" loading="lazy" width="118" height="165"></figure>
+        <figure><img src="img/svet/track-mag-18.jpg" alt="Магнитные трековые светильник" loading="lazy" width="148" height="152"></figure>
+        <figure><img src="img/svet/track-mag-19.jpg" alt="Магнитные трековые светильник" loading="lazy" width="208" height="240"></figure>
+      </div>
+    </div>
+  </section>
+  <section id="track" class="cat">
+    <div class="wrap">
+      <h2>Трековые</h2>
+      <p class="lead">Классические трековые споты: направляют свет на стену, картину, рабочую зону.</p>
+      <div class="lamps">
+        <figure><img src="img/svet/track-01.jpg" alt="Трековые светильник" loading="lazy" width="183" height="221"></figure>
+        <figure><img src="img/svet/track-02.jpg" alt="Трековые светильник" loading="lazy" width="129" height="164"></figure>
+        <figure><img src="img/svet/track-03.jpg" alt="Трековые светильник" loading="lazy" width="144" height="182"></figure>
+        <figure><img src="img/svet/track-04.jpg" alt="Трековые светильник" loading="lazy" width="133" height="170"></figure>
+        <figure><img src="img/svet/track-05.jpg" alt="Трековые светильник" loading="lazy" width="181" height="217"></figure>
+        <figure><img src="img/svet/track-06.jpg" alt="Трековые светильник" loading="lazy" width="197" height="192"></figure>
+        <figure><img src="img/svet/track-07.jpg" alt="Трековые светильник" loading="lazy" width="151" height="191"></figure>
+        <figure><img src="img/svet/track-08.jpg" alt="Трековые светильник" loading="lazy" width="130" height="176"></figure>
+        <figure><img src="img/svet/track-09.jpg" alt="Трековые светильник" loading="lazy" width="130" height="184"></figure>
+        <figure><img src="img/svet/track-10.jpg" alt="Трековые светильник" loading="lazy" width="136" height="188"></figure>
+        <figure><img src="img/svet/track-11.jpg" alt="Трековые светильник" loading="lazy" width="125" height="237"></figure>
+        <figure><img src="img/svet/track-12.jpg" alt="Трековые светильник" loading="lazy" width="125" height="225"></figure>
+        <figure><img src="img/svet/track-13.jpg" alt="Трековые светильник" loading="lazy" width="116" height="170"></figure>
+        <figure><img src="img/svet/track-14.jpg" alt="Трековые светильник" loading="lazy" width="124" height="186"></figure>
+        <figure><img src="img/svet/track-15.jpg" alt="Трековые светильник" loading="lazy" width="162" height="216"></figure>
+        <figure><img src="img/svet/track-16.jpg" alt="Трековые светильник" loading="lazy" width="142" height="219"></figure>
+        <figure><img src="img/svet/track-17.jpg" alt="Трековые светильник" loading="lazy" width="147" height="220"></figure>
+        <figure><img src="img/svet/track-18.jpg" alt="Трековые светильник" loading="lazy" width="151" height="206"></figure>
+        <figure><img src="img/svet/track-19.jpg" alt="Трековые светильник" loading="lazy" width="126" height="187"></figure>
+        <figure><img src="img/svet/track-20.jpg" alt="Трековые светильник" loading="lazy" width="124" height="191"></figure>
+        <figure><img src="img/svet/track-21.jpg" alt="Трековые светильник" loading="lazy" width="148" height="257"></figure>
+        <figure><img src="img/svet/track-22.jpg" alt="Трековые светильник" loading="lazy" width="138" height="241"></figure>
+        <figure><img src="img/svet/track-23.jpg" alt="Трековые светильник" loading="lazy" width="251" height="243"></figure>
+        <figure><img src="img/svet/track-24.jpg" alt="Трековые светильник" loading="lazy" width="224" height="255"></figure>
+        <figure><img src="img/svet/track-25.jpg" alt="Трековые светильник" loading="lazy" width="221" height="260"></figure>
+        <figure><img src="img/svet/track-26.jpg" alt="Трековые светильник" loading="lazy" width="100" height="190"></figure>
+        <figure><img src="img/svet/track-27.jpg" alt="Трековые светильник" loading="lazy" width="111" height="191"></figure>
+        <figure><img src="img/svet/track-28.jpg" alt="Трековые светильник" loading="lazy" width="281" height="221"></figure>
+        <figure><img src="img/svet/track-29.jpg" alt="Трековые светильник" loading="lazy" width="176" height="200"></figure>
+        <figure><img src="img/svet/track-30.jpg" alt="Трековые светильник" loading="lazy" width="168" height="194"></figure>
+        <figure><img src="img/svet/track-31.jpg" alt="Трековые светильник" loading="lazy" width="189" height="217"></figure>
+        <figure><img src="img/svet/track-32.jpg" alt="Трековые светильник" loading="lazy" width="178" height="211"></figure>
+        <figure><img src="img/svet/track-33.jpg" alt="Трековые светильник" loading="lazy" width="217" height="250"></figure>
+      </div>
+    </div>
+  </section>
+  <section id="vstr" class="cat">
+    <div class="wrap">
+      <h2>Встраиваемые</h2>
+      <p class="lead">Точечные светильники в полотно: поворотные, двойные и тройные, со сменной лампой.</p>
+      <div class="lamps">
+        <figure><img src="img/svet/vstr-01.jpg" alt="Встраиваемые светильник" loading="lazy" width="280" height="196"></figure>
+        <figure><img src="img/svet/vstr-02.jpg" alt="Встраиваемые светильник" loading="lazy" width="320" height="220"></figure>
+        <figure><img src="img/svet/vstr-03.jpg" alt="Встраиваемые светильник" loading="lazy" width="272" height="205"></figure>
+        <figure><img src="img/svet/vstr-04.jpg" alt="Встраиваемые светильник" loading="lazy" width="235" height="139"></figure>
+        <figure><img src="img/svet/vstr-05.jpg" alt="Встраиваемые светильник" loading="lazy" width="235" height="140"></figure>
+        <figure><img src="img/svet/vstr-06.jpg" alt="Встраиваемые светильник" loading="lazy" width="235" height="140"></figure>
+        <figure><img src="img/svet/vstr-07.jpg" alt="Встраиваемые светильник" loading="lazy" width="236" height="140"></figure>
+        <figure><img src="img/svet/vstr-08.jpg" alt="Встраиваемые светильник" loading="lazy" width="118" height="80"></figure>
+        <figure><img src="img/svet/vstr-09.jpg" alt="Встраиваемые светильник" loading="lazy" width="125" height="82"></figure>
+        <figure><img src="img/svet/vstr-10.jpg" alt="Встраиваемые светильник" loading="lazy" width="113" height="80"></figure>
+        <figure><img src="img/svet/vstr-11.jpg" alt="Встраиваемые светильник" loading="lazy" width="112" height="112"></figure>
+        <figure><img src="img/svet/vstr-12.jpg" alt="Встраиваемые светильник" loading="lazy" width="109" height="109"></figure>
+        <figure><img src="img/svet/vstr-13.jpg" alt="Встраиваемые светильник" loading="lazy" width="109" height="109"></figure>
+        <figure><img src="img/svet/vstr-14.jpg" alt="Встраиваемые светильник" loading="lazy" width="111" height="111"></figure>
+        <figure><img src="img/svet/vstr-15.jpg" alt="Встраиваемые светильник" loading="lazy" width="109" height="109"></figure>
+        <figure><img src="img/svet/vstr-16.jpg" alt="Встраиваемые светильник" loading="lazy" width="106" height="106"></figure>
+        <figure><img src="img/svet/vstr-17.jpg" alt="Встраиваемые светильник" loading="lazy" width="108" height="108"></figure>
+        <figure><img src="img/svet/vstr-18.jpg" alt="Встраиваемые светильник" loading="lazy" width="109" height="109"></figure>
+        <figure><img src="img/svet/vstr-19.jpg" alt="Встраиваемые светильник" loading="lazy" width="109" height="109"></figure>
+        <figure><img src="img/svet/vstr-20.jpg" alt="Встраиваемые светильник" loading="lazy" width="109" height="109"></figure>
+        <figure><img src="img/svet/vstr-21.jpg" alt="Встраиваемые светильник" loading="lazy" width="109" height="109"></figure>
+        <figure><img src="img/svet/vstr-22.jpg" alt="Встраиваемые светильник" loading="lazy" width="154" height="154"></figure>
+        <figure><img src="img/svet/vstr-23.jpg" alt="Встраиваемые светильник" loading="lazy" width="138" height="113"></figure>
+        <figure><img src="img/svet/vstr-24.jpg" alt="Встраиваемые светильник" loading="lazy" width="213" height="199"></figure>
+        <figure><img src="img/svet/vstr-25.jpg" alt="Встраиваемые светильник" loading="lazy" width="114" height="98"></figure>
+        <figure><img src="img/svet/vstr-26.jpg" alt="Встраиваемые светильник" loading="lazy" width="139" height="139"></figure>
+        <figure><img src="img/svet/vstr-27.jpg" alt="Встраиваемые светильник" loading="lazy" width="152" height="152"></figure>
+        <figure><img src="img/svet/vstr-28.jpg" alt="Встраиваемые светильник" loading="lazy" width="112" height="112"></figure>
+        <figure><img src="img/svet/vstr-29.jpg" alt="Встраиваемые светильник" loading="lazy" width="194" height="111"></figure>
+        <figure><img src="img/svet/vstr-30.jpg" alt="Встраиваемые светильник" loading="lazy" width="195" height="114"></figure>
+        <figure><img src="img/svet/vstr-31.jpg" alt="Встраиваемые светильник" loading="lazy" width="201" height="110"></figure>
+        <figure><img src="img/svet/vstr-32.jpg" alt="Встраиваемые светильник" loading="lazy" width="186" height="186"></figure>
+        <figure><img src="img/svet/vstr-33.jpg" alt="Встраиваемые светильник" loading="lazy" width="184" height="184"></figure>
+        <figure><img src="img/svet/vstr-34.jpg" alt="Встраиваемые светильник" loading="lazy" width="188" height="119"></figure>
+        <figure><img src="img/svet/vstr-35.jpg" alt="Встраиваемые светильник" loading="lazy" width="192" height="122"></figure>
+        <figure><img src="img/svet/vstr-36.jpg" alt="Встраиваемые светильник" loading="lazy" width="320" height="165"></figure>
+        <figure><img src="img/svet/vstr-37.jpg" alt="Встраиваемые светильник" loading="lazy" width="320" height="201"></figure>
+        <figure><img src="img/svet/vstr-38.jpg" alt="Встраиваемые светильник" loading="lazy" width="320" height="205"></figure>
+        <figure><img src="img/svet/vstr-39.jpg" alt="Встраиваемые светильник" loading="lazy" width="320" height="204"></figure>
+        <figure><img src="img/svet/vstr-40.jpg" alt="Встраиваемые светильник" loading="lazy" width="320" height="130"></figure>
+        <figure><img src="img/svet/vstr-41.jpg" alt="Встраиваемые светильник" loading="lazy" width="320" height="105"></figure>
+        <figure><img src="img/svet/vstr-42.jpg" alt="Встраиваемые светильник" loading="lazy" width="320" height="107"></figure>
+        <figure><img src="img/svet/vstr-43.jpg" alt="Встраиваемые светильник" loading="lazy" width="185" height="140"></figure>
+        <figure><img src="img/svet/vstr-44.jpg" alt="Встраиваемые светильник" loading="lazy" width="188" height="138"></figure>
+        <figure><img src="img/svet/vstr-45.jpg" alt="Встраиваемые светильник" loading="lazy" width="185" height="143"></figure>
+        <figure><img src="img/svet/vstr-46.jpg" alt="Встраиваемые светильник" loading="lazy" width="187" height="145"></figure>
+        <figure><img src="img/svet/vstr-47.jpg" alt="Встраиваемые светильник" loading="lazy" width="188" height="141"></figure>
+        <figure><img src="img/svet/vstr-48.jpg" alt="Встраиваемые светильник" loading="lazy" width="191" height="141"></figure>
+        <figure><img src="img/svet/vstr-49.jpg" alt="Встраиваемые светильник" loading="lazy" width="167" height="162"></figure>
+        <figure><img src="img/svet/vstr-50.jpg" alt="Встраиваемые светильник" loading="lazy" width="175" height="169"></figure>
+        <figure><img src="img/svet/vstr-51.jpg" alt="Встраиваемые светильник" loading="lazy" width="190" height="171"></figure>
+        <figure><img src="img/svet/vstr-52.jpg" alt="Встраиваемые светильник" loading="lazy" width="191" height="171"></figure>
+        <figure><img src="img/svet/vstr-53.jpg" alt="Встраиваемые светильник" loading="lazy" width="196" height="180"></figure>
+        <figure><img src="img/svet/vstr-54.jpg" alt="Встраиваемые светильник" loading="lazy" width="203" height="175"></figure>
+        <figure><img src="img/svet/vstr-55.jpg" alt="Встраиваемые светильник" loading="lazy" width="238" height="174"></figure>
+        <figure><img src="img/svet/vstr-56.jpg" alt="Встраиваемые светильник" loading="lazy" width="218" height="158"></figure>
+        <figure><img src="img/svet/vstr-57.jpg" alt="Встраиваемые светильник" loading="lazy" width="213" height="163"></figure>
+        <figure><img src="img/svet/vstr-58.jpg" alt="Встраиваемые светильник" loading="lazy" width="229" height="175"></figure>
+        <figure><img src="img/svet/vstr-59.jpg" alt="Встраиваемые светильник" loading="lazy" width="178" height="128"></figure>
+        <figure><img src="img/svet/vstr-60.jpg" alt="Встраиваемые светильник" loading="lazy" width="184" height="137"></figure>
+        <figure><img src="img/svet/vstr-61.jpg" alt="Встраиваемые светильник" loading="lazy" width="212" height="150"></figure>
+        <figure><img src="img/svet/vstr-62.jpg" alt="Встраиваемые светильник" loading="lazy" width="202" height="143"></figure>
+        <figure><img src="img/svet/vstr-63.jpg" alt="Встраиваемые светильник" loading="lazy" width="211" height="151"></figure>
+        <figure><img src="img/svet/vstr-64.jpg" alt="Встраиваемые светильник" loading="lazy" width="201" height="142"></figure>
+        <figure><img src="img/svet/vstr-65.jpg" alt="Встраиваемые светильник" loading="lazy" width="200" height="145"></figure>
+        <figure><img src="img/svet/vstr-66.jpg" alt="Встраиваемые светильник" loading="lazy" width="219" height="158"></figure>
+        <figure><img src="img/svet/vstr-67.jpg" alt="Встраиваемые светильник" loading="lazy" width="192" height="170"></figure>
+        <figure><img src="img/svet/vstr-68.jpg" alt="Встраиваемые светильник" loading="lazy" width="214" height="156"></figure>
+        <figure><img src="img/svet/vstr-69.jpg" alt="Встраиваемые светильник" loading="lazy" width="196" height="138"></figure>
+        <figure><img src="img/svet/vstr-70.jpg" alt="Встраиваемые светильник" loading="lazy" width="178" height="170"></figure>
+        <figure><img src="img/svet/vstr-71.jpg" alt="Встраиваемые светильник" loading="lazy" width="164" height="161"></figure>
+        <figure><img src="img/svet/vstr-72.jpg" alt="Встраиваемые светильник" loading="lazy" width="184" height="158"></figure>
+        <figure><img src="img/svet/vstr-73.jpg" alt="Встраиваемые светильник" loading="lazy" width="180" height="162"></figure>
+        <figure><img src="img/svet/vstr-74.jpg" alt="Встраиваемые светильник" loading="lazy" width="146" height="128"></figure>
+        <figure><img src="img/svet/vstr-75.jpg" alt="Встраиваемые светильник" loading="lazy" width="133" height="130"></figure>
+        <figure><img src="img/svet/vstr-76.jpg" alt="Встраиваемые светильник" loading="lazy" width="227" height="169"></figure>
+        <figure><img src="img/svet/vstr-77.jpg" alt="Встраиваемые светильник" loading="lazy" width="227" height="169"></figure>
+        <figure><img src="img/svet/vstr-78.jpg" alt="Встраиваемые светильник" loading="lazy" width="320" height="190"></figure>
+        <figure><img src="img/svet/vstr-79.jpg" alt="Встраиваемые светильник" loading="lazy" width="316" height="188"></figure>
+        <figure><img src="img/svet/vstr-80.jpg" alt="Встраиваемые светильник" loading="lazy" width="320" height="168"></figure>
+        <figure><img src="img/svet/vstr-81.jpg" alt="Встраиваемые светильник" loading="lazy" width="320" height="169"></figure>
+        <figure><img src="img/svet/vstr-82.jpg" alt="Встраиваемые светильник" loading="lazy" width="240" height="114"></figure>
+        <figure><img src="img/svet/vstr-83.jpg" alt="Встраиваемые светильник" loading="lazy" width="252" height="119"></figure>
+        <figure><img src="img/svet/vstr-84.jpg" alt="Встраиваемые светильник" loading="lazy" width="256" height="106"></figure>
+        <figure><img src="img/svet/vstr-85.jpg" alt="Встраиваемые светильник" loading="lazy" width="220" height="220"></figure>
+        <figure><img src="img/svet/vstr-86.jpg" alt="Встраиваемые светильник" loading="lazy" width="222" height="222"></figure>
+        <figure><img src="img/svet/vstr-87.jpg" alt="Встраиваемые светильник" loading="lazy" width="104" height="158"></figure>
+        <figure><img src="img/svet/vstr-88.jpg" alt="Встраиваемые светильник" loading="lazy" width="182" height="109"></figure>
+        <figure><img src="img/svet/vstr-89.jpg" alt="Встраиваемые светильник" loading="lazy" width="172" height="91"></figure>
+      </div>
+    </div>
+  </section>
+  <section id="nakl" class="cat">
+    <div class="wrap">
+      <h2>Накладные</h2>
+      <p class="lead">Цилиндры и «таблетки» поверх потолка — когда нужен акцент или высокий светильник.</p>
+      <div class="lamps">
+        <figure><img src="img/svet/nakl-01.jpg" alt="Накладные светильник" loading="lazy" width="206" height="212"></figure>
+        <figure><img src="img/svet/nakl-02.jpg" alt="Накладные светильник" loading="lazy" width="211" height="213"></figure>
+        <figure><img src="img/svet/nakl-03.jpg" alt="Накладные светильник" loading="lazy" width="104" height="102"></figure>
+        <figure><img src="img/svet/nakl-04.jpg" alt="Накладные светильник" loading="lazy" width="103" height="99"></figure>
+        <figure><img src="img/svet/nakl-05.jpg" alt="Накладные светильник" loading="lazy" width="103" height="102"></figure>
+        <figure><img src="img/svet/nakl-06.jpg" alt="Накладные светильник" loading="lazy" width="102" height="101"></figure>
+        <figure><img src="img/svet/nakl-07.jpg" alt="Накладные светильник" loading="lazy" width="104" height="104"></figure>
+        <figure><img src="img/svet/nakl-08.jpg" alt="Накладные светильник" loading="lazy" width="154" height="180"></figure>
+        <figure><img src="img/svet/nakl-09.jpg" alt="Накладные светильник" loading="lazy" width="151" height="184"></figure>
+        <figure><img src="img/svet/nakl-10.jpg" alt="Накладные светильник" loading="lazy" width="137" height="206"></figure>
+        <figure><img src="img/svet/nakl-11.jpg" alt="Накладные светильник" loading="lazy" width="137" height="206"></figure>
+        <figure><img src="img/svet/nakl-12.jpg" alt="Накладные светильник" loading="lazy" width="128" height="150"></figure>
+        <figure><img src="img/svet/nakl-13.jpg" alt="Накладные светильник" loading="lazy" width="128" height="150"></figure>
+        <figure><img src="img/svet/nakl-14.jpg" alt="Накладные светильник" loading="lazy" width="134" height="245"></figure>
+        <figure><img src="img/svet/nakl-15.jpg" alt="Накладные светильник" loading="lazy" width="142" height="242"></figure>
+        <figure><img src="img/svet/nakl-16.jpg" alt="Накладные светильник" loading="lazy" width="107" height="159"></figure>
+        <figure><img src="img/svet/nakl-17.jpg" alt="Накладные светильник" loading="lazy" width="106" height="165"></figure>
+        <figure><img src="img/svet/nakl-18.jpg" alt="Накладные светильник" loading="lazy" width="84" height="189"></figure>
+        <figure><img src="img/svet/nakl-19.jpg" alt="Накладные светильник" loading="lazy" width="86" height="132"></figure>
+        <figure><img src="img/svet/nakl-20.jpg" alt="Накладные светильник" loading="lazy" width="86" height="127"></figure>
+        <figure><img src="img/svet/nakl-21.jpg" alt="Накладные светильник" loading="lazy" width="126" height="103"></figure>
+        <figure><img src="img/svet/nakl-22.jpg" alt="Накладные светильник" loading="lazy" width="136" height="110"></figure>
+        <figure><img src="img/svet/nakl-23.jpg" alt="Накладные светильник" loading="lazy" width="196" height="147"></figure>
+        <figure><img src="img/svet/nakl-24.jpg" alt="Накладные светильник" loading="lazy" width="233" height="174"></figure>
+        <figure><img src="img/svet/nakl-25.jpg" alt="Накладные светильник" loading="lazy" width="136" height="144"></figure>
+        <figure><img src="img/svet/nakl-26.jpg" alt="Накладные светильник" loading="lazy" width="226" height="226"></figure>
+        <figure><img src="img/svet/nakl-27.jpg" alt="Накладные светильник" loading="lazy" width="102" height="155"></figure>
+        <figure><img src="img/svet/nakl-28.jpg" alt="Накладные светильник" loading="lazy" width="101" height="151"></figure>
+        <figure><img src="img/svet/nakl-29.jpg" alt="Накладные светильник" loading="lazy" width="138" height="159"></figure>
+        <figure><img src="img/svet/nakl-30.jpg" alt="Накладные светильник" loading="lazy" width="139" height="151"></figure>
+        <figure><img src="img/svet/nakl-31.jpg" alt="Накладные светильник" loading="lazy" width="102" height="107"></figure>
+        <figure><img src="img/svet/nakl-32.jpg" alt="Накладные светильник" loading="lazy" width="106" height="101"></figure>
+        <figure><img src="img/svet/nakl-33.jpg" alt="Накладные светильник" loading="lazy" width="106" height="102"></figure>
+        <figure><img src="img/svet/nakl-34.jpg" alt="Накладные светильник" loading="lazy" width="146" height="117"></figure>
+        <figure><img src="img/svet/nakl-35.jpg" alt="Накладные светильник" loading="lazy" width="123" height="120"></figure>
+        <figure><img src="img/svet/nakl-36.jpg" alt="Накладные светильник" loading="lazy" width="143" height="120"></figure>
+        <figure><img src="img/svet/nakl-37.jpg" alt="Накладные светильник" loading="lazy" width="145" height="145"></figure>
+        <figure><img src="img/svet/nakl-38.jpg" alt="Накладные светильник" loading="lazy" width="143" height="143"></figure>
+        <figure><img src="img/svet/nakl-39.jpg" alt="Накладные светильник" loading="lazy" width="143" height="143"></figure>
+        <figure><img src="img/svet/nakl-40.jpg" alt="Накладные светильник" loading="lazy" width="113" height="127"></figure>
+        <figure><img src="img/svet/nakl-41.jpg" alt="Накладные светильник" loading="lazy" width="113" height="129"></figure>
+        <figure><img src="img/svet/nakl-42.jpg" alt="Накладные светильник" loading="lazy" width="135" height="141"></figure>
+        <figure><img src="img/svet/nakl-43.jpg" alt="Накладные светильник" loading="lazy" width="146" height="152"></figure>
+        <figure><img src="img/svet/nakl-44.jpg" alt="Накладные светильник" loading="lazy" width="200" height="181"></figure>
+        <figure><img src="img/svet/nakl-45.jpg" alt="Накладные светильник" loading="lazy" width="320" height="136"></figure>
+        <figure><img src="img/svet/nakl-46.jpg" alt="Накладные светильник" loading="lazy" width="175" height="175"></figure>
+        <figure><img src="img/svet/nakl-47.jpg" alt="Накладные светильник" loading="lazy" width="156" height="156"></figure>
+        <figure><img src="img/svet/nakl-48.jpg" alt="Накладные светильник" loading="lazy" width="165" height="153"></figure>
+        <figure><img src="img/svet/nakl-49.jpg" alt="Накладные светильник" loading="lazy" width="194" height="194"></figure>
+        <figure><img src="img/svet/nakl-50.jpg" alt="Накладные светильник" loading="lazy" width="148" height="141"></figure>
+        <figure><img src="img/svet/nakl-51.jpg" alt="Накладные светильник" loading="lazy" width="130" height="123"></figure>
+        <figure><img src="img/svet/nakl-52.jpg" alt="Накладные светильник" loading="lazy" width="135" height="127"></figure>
+        <figure><img src="img/svet/nakl-53.jpg" alt="Накладные светильник" loading="lazy" width="118" height="152"></figure>
+        <figure><img src="img/svet/nakl-54.jpg" alt="Накладные светильник" loading="lazy" width="161" height="208"></figure>
+        <figure><img src="img/svet/nakl-55.jpg" alt="Накладные светильник" loading="lazy" width="184" height="226"></figure>
+        <figure><img src="img/svet/nakl-56.jpg" alt="Накладные светильник" loading="lazy" width="112" height="136"></figure>
+        <figure><img src="img/svet/nakl-57.jpg" alt="Накладные светильник" loading="lazy" width="112" height="136"></figure>
+        <figure><img src="img/svet/nakl-58.jpg" alt="Накладные светильник" loading="lazy" width="160" height="208"></figure>
+        <figure><img src="img/svet/nakl-59.jpg" alt="Накладные светильник" loading="lazy" width="139" height="180"></figure>
+        <figure><img src="img/svet/nakl-60.jpg" alt="Накладные светильник" loading="lazy" width="199" height="237"></figure>
+        <figure><img src="img/svet/nakl-61.jpg" alt="Накладные светильник" loading="lazy" width="116" height="116"></figure>
+        <figure><img src="img/svet/nakl-62.jpg" alt="Накладные светильник" loading="lazy" width="320" height="214"></figure>
+        <figure><img src="img/svet/nakl-63.jpg" alt="Накладные светильник" loading="lazy" width="134" height="134"></figure>
+        <figure><img src="img/svet/nakl-64.jpg" alt="Накладные светильник" loading="lazy" width="134" height="134"></figure>
+        <figure><img src="img/svet/nakl-65.jpg" alt="Накладные светильник" loading="lazy" width="135" height="135"></figure>
+        <figure><img src="img/svet/nakl-66.jpg" alt="Накладные светильник" loading="lazy" width="129" height="130"></figure>
+        <figure><img src="img/svet/nakl-67.jpg" alt="Накладные светильник" loading="lazy" width="116" height="116"></figure>
+        <figure><img src="img/svet/nakl-68.jpg" alt="Накладные светильник" loading="lazy" width="147" height="208"></figure>
+        <figure><img src="img/svet/nakl-69.jpg" alt="Накладные светильник" loading="lazy" width="152" height="204"></figure>
+        <figure><img src="img/svet/nakl-70.jpg" alt="Накладные светильник" loading="lazy" width="154" height="261"></figure>
+        <figure><img src="img/svet/nakl-71.jpg" alt="Накладные светильник" loading="lazy" width="150" height="240"></figure>
+        <figure><img src="img/svet/nakl-72.jpg" alt="Накладные светильник" loading="lazy" width="190" height="186"></figure>
+        <figure><img src="img/svet/nakl-73.jpg" alt="Накладные светильник" loading="lazy" width="214" height="214"></figure>
+        <figure><img src="img/svet/nakl-74.jpg" alt="Накладные светильник" loading="lazy" width="107" height="131"></figure>
+        <figure><img src="img/svet/nakl-75.jpg" alt="Накладные светильник" loading="lazy" width="258" height="137"></figure>
+        <figure><img src="img/svet/nakl-76.jpg" alt="Накладные светильник" loading="lazy" width="255" height="133"></figure>
+        <figure><img src="img/svet/nakl-77.jpg" alt="Накладные светильник" loading="lazy" width="320" height="117"></figure>
+        <figure><img src="img/svet/nakl-78.jpg" alt="Накладные светильник" loading="lazy" width="320" height="118"></figure>
+      </div>
+    </div>
+  </section>
+  <section id="lustry" class="cat">
+    <div class="wrap">
+      <h2>Люстры</h2>
+      <p class="lead">Светодиодные люстры с пультом и плавной регулировкой, кольца и дизайнерские формы.</p>
+      <div class="lamps">
+        <figure><img src="img/svet/lustry-01.jpg" alt="Люстры светильник" loading="lazy" width="79" height="320"></figure>
+        <figure><img src="img/svet/lustry-02.jpg" alt="Люстры светильник" loading="lazy" width="320" height="156"></figure>
+        <figure><img src="img/svet/lustry-03.jpg" alt="Люстры светильник" loading="lazy" width="320" height="167"></figure>
+        <figure><img src="img/svet/lustry-04.jpg" alt="Люстры светильник" loading="lazy" width="320" height="163"></figure>
+        <figure><img src="img/svet/lustry-05.jpg" alt="Люстры светильник" loading="lazy" width="320" height="134"></figure>
+        <figure><img src="img/svet/lustry-06.jpg" alt="Люстры светильник" loading="lazy" width="320" height="182"></figure>
+        <figure><img src="img/svet/lustry-07.jpg" alt="Люстры светильник" loading="lazy" width="320" height="174"></figure>
+        <figure><img src="img/svet/lustry-08.jpg" alt="Люстры светильник" loading="lazy" width="293" height="237"></figure>
+        <figure><img src="img/svet/lustry-09.jpg" alt="Люстры светильник" loading="lazy" width="290" height="214"></figure>
+        <figure><img src="img/svet/lustry-10.jpg" alt="Люстры светильник" loading="lazy" width="289" height="215"></figure>
+        <figure><img src="img/svet/lustry-11.jpg" alt="Люстры светильник" loading="lazy" width="315" height="156"></figure>
+        <figure><img src="img/svet/lustry-12.jpg" alt="Люстры светильник" loading="lazy" width="247" height="140"></figure>
+        <figure><img src="img/svet/lustry-13.jpg" alt="Люстры светильник" loading="lazy" width="247" height="140"></figure>
+        <figure><img src="img/svet/lustry-14.jpg" alt="Люстры светильник" loading="lazy" width="247" height="140"></figure>
+        <figure><img src="img/svet/lustry-15.jpg" alt="Люстры светильник" loading="lazy" width="170" height="96"></figure>
+        <figure><img src="img/svet/lustry-16.jpg" alt="Люстры светильник" loading="lazy" width="247" height="140"></figure>
+        <figure><img src="img/svet/lustry-17.jpg" alt="Люстры светильник" loading="lazy" width="257" height="182"></figure>
+        <figure><img src="img/svet/lustry-18.jpg" alt="Люстры светильник" loading="lazy" width="248" height="141"></figure>
+        <figure><img src="img/svet/lustry-19.jpg" alt="Люстры светильник" loading="lazy" width="320" height="203"></figure>
+        <figure><img src="img/svet/lustry-20.jpg" alt="Люстры светильник" loading="lazy" width="245" height="140"></figure>
+        <figure><img src="img/svet/lustry-21.jpg" alt="Люстры светильник" loading="lazy" width="278" height="194"></figure>
+        <figure><img src="img/svet/lustry-22.jpg" alt="Люстры светильник" loading="lazy" width="320" height="190"></figure>
+        <figure><img src="img/svet/lustry-23.jpg" alt="Люстры светильник" loading="lazy" width="185" height="106"></figure>
+        <figure><img src="img/svet/lustry-24.jpg" alt="Люстры светильник" loading="lazy" width="274" height="277"></figure>
+        <figure><img src="img/svet/lustry-25.jpg" alt="Люстры светильник" loading="lazy" width="188" height="123"></figure>
+        <figure><img src="img/svet/lustry-26.jpg" alt="Люстры светильник" loading="lazy" width="224" height="230"></figure>
+        <figure><img src="img/svet/lustry-27.jpg" alt="Люстры светильник" loading="lazy" width="113" height="114"></figure>
+        <figure><img src="img/svet/lustry-28.jpg" alt="Люстры светильник" loading="lazy" width="115" height="115"></figure>
+        <figure><img src="img/svet/lustry-29.jpg" alt="Люстры светильник" loading="lazy" width="150" height="139"></figure>
+        <figure><img src="img/svet/lustry-30.jpg" alt="Люстры светильник" loading="lazy" width="247" height="140"></figure>
+        <figure><img src="img/svet/lustry-31.jpg" alt="Люстры светильник" loading="lazy" width="151" height="140"></figure>
+        <figure><img src="img/svet/lustry-32.jpg" alt="Люстры светильник" loading="lazy" width="275" height="197"></figure>
+        <figure><img src="img/svet/lustry-33.jpg" alt="Люстры светильник" loading="lazy" width="151" height="139"></figure>
+        <figure><img src="img/svet/lustry-34.jpg" alt="Люстры светильник" loading="lazy" width="300" height="216"></figure>
+        <figure><img src="img/svet/lustry-35.jpg" alt="Люстры светильник" loading="lazy" width="250" height="166"></figure>
+        <figure><img src="img/svet/lustry-36.jpg" alt="Люстры светильник" loading="lazy" width="320" height="146"></figure>
+        <figure><img src="img/svet/lustry-37.jpg" alt="Люстры светильник" loading="lazy" width="320" height="260"></figure>
+        <figure><img src="img/svet/lustry-38.jpg" alt="Люстры светильник" loading="lazy" width="270" height="171"></figure>
+        <figure><img src="img/svet/lustry-39.jpg" alt="Люстры светильник" loading="lazy" width="260" height="96"></figure>
+        <figure><img src="img/svet/lustry-40.jpg" alt="Люстры светильник" loading="lazy" width="279" height="106"></figure>
+        <figure><img src="img/svet/lustry-41.jpg" alt="Люстры светильник" loading="lazy" width="320" height="212"></figure>
+        <figure><img src="img/svet/lustry-42.jpg" alt="Люстры светильник" loading="lazy" width="320" height="197"></figure>
+        <figure><img src="img/svet/lustry-43.jpg" alt="Люстры светильник" loading="lazy" width="271" height="111"></figure>
+        <figure><img src="img/svet/lustry-44.jpg" alt="Люстры светильник" loading="lazy" width="262" height="111"></figure>
+        <figure><img src="img/svet/lustry-45.jpg" alt="Люстры светильник" loading="lazy" width="320" height="134"></figure>
+        <figure><img src="img/svet/lustry-46.jpg" alt="Люстры светильник" loading="lazy" width="320" height="157"></figure>
+        <figure><img src="img/svet/lustry-47.jpg" alt="Люстры светильник" loading="lazy" width="320" height="160"></figure>
+        <figure><img src="img/svet/lustry-48.jpg" alt="Люстры светильник" loading="lazy" width="95" height="94"></figure>
+        <figure><img src="img/svet/lustry-49.jpg" alt="Люстры светильник" loading="lazy" width="95" height="94"></figure>
+        <figure><img src="img/svet/lustry-50.jpg" alt="Люстры светильник" loading="lazy" width="94" height="94"></figure>
+        <figure><img src="img/svet/lustry-51.jpg" alt="Люстры светильник" loading="lazy" width="94" height="95"></figure>
+        <figure><img src="img/svet/lustry-52.jpg" alt="Люстры светильник" loading="lazy" width="94" height="95"></figure>
+        <figure><img src="img/svet/lustry-53.jpg" alt="Люстры светильник" loading="lazy" width="95" height="95"></figure>
+        <figure><img src="img/svet/lustry-54.jpg" alt="Люстры светильник" loading="lazy" width="316" height="136"></figure>
+        <figure><img src="img/svet/lustry-55.jpg" alt="Люстры светильник" loading="lazy" width="320" height="156"></figure>
+        <figure><img src="img/svet/lustry-56.jpg" alt="Люстры светильник" loading="lazy" width="320" height="169"></figure>
+        <figure><img src="img/svet/lustry-57.jpg" alt="Люстры светильник" loading="lazy" width="320" height="167"></figure>
+        <figure><img src="img/svet/lustry-58.jpg" alt="Люстры светильник" loading="lazy" width="320" height="168"></figure>
+      </div>
+    </div>
+  </section>
+  <section id="panel" class="cat">
+    <div class="wrap">
+      <h2>LED-панели</h2>
+      <p class="lead">Плоские встраиваемые и накладные панели — ровный яркий свет для кухни, коридора, ванной.</p>
+      <div class="lamps">
+        <figure><img src="img/svet/panel-01.jpg" alt="LED-панели светильник" loading="lazy" width="105" height="105"></figure>
+        <figure><img src="img/svet/panel-02.jpg" alt="LED-панели светильник" loading="lazy" width="91" height="96"></figure>
+        <figure><img src="img/svet/panel-03.jpg" alt="LED-панели светильник" loading="lazy" width="132" height="106"></figure>
+        <figure><img src="img/svet/panel-04.jpg" alt="LED-панели светильник" loading="lazy" width="104" height="100"></figure>
+        <figure><img src="img/svet/panel-05.jpg" alt="LED-панели светильник" loading="lazy" width="206" height="206"></figure>
+        <figure><img src="img/svet/panel-06.jpg" alt="LED-панели светильник" loading="lazy" width="201" height="201"></figure>
+        <figure><img src="img/svet/panel-07.jpg" alt="LED-панели светильник" loading="lazy" width="225" height="285"></figure>
+        <figure><img src="img/svet/panel-08.jpg" alt="LED-панели светильник" loading="lazy" width="226" height="226"></figure>
+        <figure><img src="img/svet/panel-09.jpg" alt="LED-панели светильник" loading="lazy" width="212" height="123"></figure>
+        <figure><img src="img/svet/panel-10.jpg" alt="LED-панели светильник" loading="lazy" width="226" height="215"></figure>
+        <figure><img src="img/svet/panel-11.jpg" alt="LED-панели светильник" loading="lazy" width="98" height="93"></figure>
+        <figure><img src="img/svet/panel-12.jpg" alt="LED-панели светильник" loading="lazy" width="186" height="211"></figure>
+        <figure><img src="img/svet/panel-13.jpg" alt="LED-панели светильник" loading="lazy" width="146" height="196"></figure>
+      </div>
+    </div>
+  </section>
+  <section id="dekor" class="cat">
+    <div class="wrap">
+      <h2>Декоративные</h2>
+      <p class="lead">Светильники с хрусталём и подсветкой, под лампу GX53 и MR16.</p>
+      <div class="lamps">
+        <figure><img src="img/svet/dekor-01.jpg" alt="Декоративные светильник" loading="lazy" width="218" height="209"></figure>
+        <figure><img src="img/svet/dekor-02.jpg" alt="Декоративные светильник" loading="lazy" width="190" height="180"></figure>
+        <figure><img src="img/svet/dekor-03.jpg" alt="Декоративные светильник" loading="lazy" width="186" height="186"></figure>
+        <figure><img src="img/svet/dekor-04.jpg" alt="Декоративные светильник" loading="lazy" width="183" height="178"></figure>
+        <figure><img src="img/svet/dekor-05.jpg" alt="Декоративные светильник" loading="lazy" width="175" height="176"></figure>
+        <figure><img src="img/svet/dekor-06.jpg" alt="Декоративные светильник" loading="lazy" width="180" height="171"></figure>
+        <figure><img src="img/svet/dekor-07.jpg" alt="Декоративные светильник" loading="lazy" width="174" height="174"></figure>
+        <figure><img src="img/svet/dekor-08.jpg" alt="Декоративные светильник" loading="lazy" width="196" height="190"></figure>
+        <figure><img src="img/svet/dekor-09.jpg" alt="Декоративные светильник" loading="lazy" width="173" height="171"></figure>
+        <figure><img src="img/svet/dekor-10.jpg" alt="Декоративные светильник" loading="lazy" width="185" height="184"></figure>
+        <figure><img src="img/svet/dekor-11.jpg" alt="Декоративные светильник" loading="lazy" width="194" height="192"></figure>
+        <figure><img src="img/svet/dekor-12.jpg" alt="Декоративные светильник" loading="lazy" width="192" height="194"></figure>
+        <figure><img src="img/svet/dekor-13.jpg" alt="Декоративные светильник" loading="lazy" width="211" height="211"></figure>
+        <figure><img src="img/svet/dekor-14.jpg" alt="Декоративные светильник" loading="lazy" width="216" height="168"></figure>
+        <figure><img src="img/svet/dekor-15.jpg" alt="Декоративные светильник" loading="lazy" width="219" height="166"></figure>
+        <figure><img src="img/svet/dekor-16.jpg" alt="Декоративные светильник" loading="lazy" width="220" height="159"></figure>
+        <figure><img src="img/svet/dekor-17.jpg" alt="Декоративные светильник" loading="lazy" width="220" height="220"></figure>
+        <figure><img src="img/svet/dekor-18.jpg" alt="Декоративные светильник" loading="lazy" width="214" height="153"></figure>
+        <figure><img src="img/svet/dekor-19.jpg" alt="Декоративные светильник" loading="lazy" width="217" height="175"></figure>
+        <figure><img src="img/svet/dekor-20.jpg" alt="Декоративные светильник" loading="lazy" width="280" height="280"></figure>
+        <figure><img src="img/svet/dekor-21.jpg" alt="Декоративные светильник" loading="lazy" width="170" height="118"></figure>
+        <figure><img src="img/svet/dekor-22.jpg" alt="Декоративные светильник" loading="lazy" width="161" height="98"></figure>
+        <figure><img src="img/svet/dekor-23.jpg" alt="Декоративные светильник" loading="lazy" width="199" height="107"></figure>
+        <figure><img src="img/svet/dekor-24.jpg" alt="Декоративные светильник" loading="lazy" width="177" height="107"></figure>
+        <figure><img src="img/svet/dekor-25.jpg" alt="Декоративные светильник" loading="lazy" width="186" height="107"></figure>
+        <figure><img src="img/svet/dekor-26.jpg" alt="Декоративные светильник" loading="lazy" width="176" height="100"></figure>
+        <figure><img src="img/svet/dekor-27.jpg" alt="Декоративные светильник" loading="lazy" width="179" height="113"></figure>
+        <figure><img src="img/svet/dekor-28.jpg" alt="Декоративные светильник" loading="lazy" width="163" height="124"></figure>
+        <figure><img src="img/svet/dekor-29.jpg" alt="Декоративные светильник" loading="lazy" width="201" height="111"></figure>
+        <figure><img src="img/svet/dekor-30.jpg" alt="Декоративные светильник" loading="lazy" width="174" height="121"></figure>
+        <figure><img src="img/svet/dekor-31.jpg" alt="Декоративные светильник" loading="lazy" width="245" height="245"></figure>
+        <figure><img src="img/svet/dekor-32.jpg" alt="Декоративные светильник" loading="lazy" width="256" height="256"></figure>
+        <figure><img src="img/svet/dekor-33.jpg" alt="Декоративные светильник" loading="lazy" width="102" height="102"></figure>
+        <figure><img src="img/svet/dekor-34.jpg" alt="Декоративные светильник" loading="lazy" width="101" height="99"></figure>
+        <figure><img src="img/svet/dekor-35.jpg" alt="Декоративные светильник" loading="lazy" width="224" height="234"></figure>
+        <figure><img src="img/svet/dekor-36.jpg" alt="Декоративные светильник" loading="lazy" width="234" height="234"></figure>
+        <figure><img src="img/svet/dekor-37.jpg" alt="Декоративные светильник" loading="lazy" width="244" height="244"></figure>
+        <figure><img src="img/svet/dekor-38.jpg" alt="Декоративные светильник" loading="lazy" width="111" height="113"></figure>
+        <figure><img src="img/svet/dekor-39.jpg" alt="Декоративные светильник" loading="lazy" width="107" height="108"></figure>
+        <figure><img src="img/svet/dekor-40.jpg" alt="Декоративные светильник" loading="lazy" width="112" height="116"></figure>
+        <figure><img src="img/svet/dekor-41.jpg" alt="Декоративные светильник" loading="lazy" width="195" height="147"></figure>
+        <figure><img src="img/svet/dekor-42.jpg" alt="Декоративные светильник" loading="lazy" width="102" height="98"></figure>
+        <figure><img src="img/svet/dekor-43.jpg" alt="Декоративные светильник" loading="lazy" width="208" height="145"></figure>
+        <figure><img src="img/svet/dekor-44.jpg" alt="Декоративные светильник" loading="lazy" width="108" height="108"></figure>
+        <figure><img src="img/svet/dekor-45.jpg" alt="Декоративные светильник" loading="lazy" width="209" height="115"></figure>
+        <figure><img src="img/svet/dekor-46.jpg" alt="Декоративные светильник" loading="lazy" width="242" height="242"></figure>
+        <figure><img src="img/svet/dekor-47.jpg" alt="Декоративные светильник" loading="lazy" width="101" height="101"></figure>
+        <figure><img src="img/svet/dekor-48.jpg" alt="Декоративные светильник" loading="lazy" width="241" height="241"></figure>
+        <figure><img src="img/svet/dekor-49.jpg" alt="Декоративные светильник" loading="lazy" width="100" height="100"></figure>
+        <figure><img src="img/svet/dekor-50.jpg" alt="Декоративные светильник" loading="lazy" width="235" height="235"></figure>
+        <figure><img src="img/svet/dekor-51.jpg" alt="Декоративные светильник" loading="lazy" width="244" height="244"></figure>
+        <figure><img src="img/svet/dekor-52.jpg" alt="Декоративные светильник" loading="lazy" width="102" height="102"></figure>
+        <figure><img src="img/svet/dekor-53.jpg" alt="Декоративные светильник" loading="lazy" width="100" height="98"></figure>
+        <figure><img src="img/svet/dekor-54.jpg" alt="Декоративные светильник" loading="lazy" width="163" height="159"></figure>
+        <figure><img src="img/svet/dekor-55.jpg" alt="Декоративные светильник" loading="lazy" width="157" height="158"></figure>
+        <figure><img src="img/svet/dekor-56.jpg" alt="Декоративные светильник" loading="lazy" width="169" height="161"></figure>
+        <figure><img src="img/svet/dekor-57.jpg" alt="Декоративные светильник" loading="lazy" width="159" height="159"></figure>
+        <figure><img src="img/svet/dekor-58.jpg" alt="Декоративные светильник" loading="lazy" width="171" height="166"></figure>
+        <figure><img src="img/svet/dekor-59.jpg" alt="Декоративные светильник" loading="lazy" width="159" height="157"></figure>
+        <figure><img src="img/svet/dekor-60.jpg" alt="Декоративные светильник" loading="lazy" width="166" height="165"></figure>
+        <figure><img src="img/svet/dekor-61.jpg" alt="Декоративные светильник" loading="lazy" width="248" height="248"></figure>
+        <figure><img src="img/svet/dekor-62.jpg" alt="Декоративные светильник" loading="lazy" width="231" height="231"></figure>
+        <figure><img src="img/svet/dekor-63.jpg" alt="Декоративные светильник" loading="lazy" width="99" height="99"></figure>
+        <figure><img src="img/svet/dekor-64.jpg" alt="Декоративные светильник" loading="lazy" width="100" height="98"></figure>
+        <figure><img src="img/svet/dekor-65.jpg" alt="Декоративные светильник" loading="lazy" width="181" height="202"></figure>
+        <figure><img src="img/svet/dekor-66.jpg" alt="Декоративные светильник" loading="lazy" width="189" height="186"></figure>
+        <figure><img src="img/svet/dekor-67.jpg" alt="Декоративные светильник" loading="lazy" width="179" height="210"></figure>
+        <figure><img src="img/svet/dekor-68.jpg" alt="Декоративные светильник" loading="lazy" width="174" height="181"></figure>
+        <figure><img src="img/svet/dekor-69.jpg" alt="Декоративные светильник" loading="lazy" width="202" height="202"></figure>
+        <figure><img src="img/svet/dekor-70.jpg" alt="Декоративные светильник" loading="lazy" width="227" height="227"></figure>
+        <figure><img src="img/svet/dekor-71.jpg" alt="Декоративные светильник" loading="lazy" width="103" height="103"></figure>
+        <figure><img src="img/svet/dekor-72.jpg" alt="Декоративные светильник" loading="lazy" width="104" height="102"></figure>
+        <figure><img src="img/svet/dekor-73.jpg" alt="Декоративные светильник" loading="lazy" width="236" height="236"></figure>
+        <figure><img src="img/svet/dekor-74.jpg" alt="Декоративные светильник" loading="lazy" width="99" height="99"></figure>
+        <figure><img src="img/svet/dekor-75.jpg" alt="Декоративные светильник" loading="lazy" width="219" height="219"></figure>
+        <figure><img src="img/svet/dekor-76.jpg" alt="Декоративные светильник" loading="lazy" width="101" height="100"></figure>
+        <figure><img src="img/svet/dekor-77.jpg" alt="Декоративные светильник" loading="lazy" width="207" height="194"></figure>
+        <figure><img src="img/svet/dekor-78.jpg" alt="Декоративные светильник" loading="lazy" width="275" height="178"></figure>
+        <figure><img src="img/svet/dekor-79.jpg" alt="Декоративные светильник" loading="lazy" width="238" height="238"></figure>
+        <figure><img src="img/svet/dekor-80.jpg" alt="Декоративные светильник" loading="lazy" width="237" height="237"></figure>
+        <figure><img src="img/svet/dekor-81.jpg" alt="Декоративные светильник" loading="lazy" width="98" height="98"></figure>
+        <figure><img src="img/svet/dekor-82.jpg" alt="Декоративные светильник" loading="lazy" width="97" height="95"></figure>
+        <figure><img src="img/svet/dekor-83.jpg" alt="Декоративные светильник" loading="lazy" width="261" height="261"></figure>
+        <figure><img src="img/svet/dekor-84.jpg" alt="Декоративные светильник" loading="lazy" width="90" height="90"></figure>
+        <figure><img src="img/svet/dekor-85.jpg" alt="Декоративные светильник" loading="lazy" width="241" height="241"></figure>
+        <figure><img src="img/svet/dekor-86.jpg" alt="Декоративные светильник" loading="lazy" width="95" height="95"></figure>
+        <figure><img src="img/svet/dekor-87.jpg" alt="Декоративные светильник" loading="lazy" width="240" height="240"></figure>
+        <figure><img src="img/svet/dekor-88.jpg" alt="Декоративные светильник" loading="lazy" width="92" height="90"></figure>
+        <figure><img src="img/svet/dekor-89.jpg" alt="Декоративные светильник" loading="lazy" width="234" height="234"></figure>
+        <figure><img src="img/svet/dekor-90.jpg" alt="Декоративные светильник" loading="lazy" width="91" height="89"></figure>
+        <figure><img src="img/svet/dekor-91.jpg" alt="Декоративные светильник" loading="lazy" width="247" height="247"></figure>
+        <figure><img src="img/svet/dekor-92.jpg" alt="Декоративные светильник" loading="lazy" width="89" height="87"></figure>
+        <figure><img src="img/svet/dekor-93.jpg" alt="Декоративные светильник" loading="lazy" width="258" height="258"></figure>
+        <figure><img src="img/svet/dekor-94.jpg" alt="Декоративные светильник" loading="lazy" width="250" height="250"></figure>
+        <figure><img src="img/svet/dekor-95.jpg" alt="Декоративные светильник" loading="lazy" width="95" height="95"></figure>
+        <figure><img src="img/svet/dekor-96.jpg" alt="Декоративные светильник" loading="lazy" width="95" height="95"></figure>
+        <figure><img src="img/svet/dekor-97.jpg" alt="Декоративные светильник" loading="lazy" width="180" height="180"></figure>
+        <figure><img src="img/svet/dekor-98.jpg" alt="Декоративные светильник" loading="lazy" width="239" height="191"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap cta">
+      <div>
+        <h2 style="margin:0">Поможем выбрать свет</h2>
+        <p>На бесплатном замере покажем образцы, нарисуем схему освещения и назовём цену под ключ — потолок, светильники и монтаж.</p>
+      </div>
+      <div class="msg">
+            <a class="tg" href="https://t.me/+79656109109" target="_blank" rel="noopener">Telegram</a>
+            <a class="wa" href="https://wa.me/79656109109" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="mx" href="https://max.ru/u/f9LHodD0cOJtxExRxXfRDUpJuVhRXKote5mQpIspn0BRSNDShJHzEzCQXgc" target="_blank" rel="noopener">MAX</a>
+          </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Engineer Kazan · каталог светильников · <a href="tel:+79656109109">+7 965 610-91-09</a></span>
+    <span><a href="index.html">Все услуги</a> · <a href="privacy.html">Политика конфиденциальности</a></span>
+  </div>
+</footer>
+
+<div class="callbar"><a class="c1" href="tel:+79656109109">Позвонить</a><a class="c2" href="potolki.html#raschet">Узнать цену</a></div>
+
+<script>
+/* Яндекс Метрика (тот же счётчик, что на основном сайте) */
+var YM_ID=113336440;
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,'script','https://mc.yandex.ru/metrika/tag.js','ym');
+ym(YM_ID,'init',{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
+function goal(name){if(window.ym)ym(YM_ID,'reachGoal',name);}
+document.addEventListener('click',function(e){if(e.target.closest('a[href^="tel:"]'))goal('phone');});
+document.addEventListener('click',function(e){if(e.target.closest('.msg a, .hmsg a'))goal('messenger');});
+
+</script>
+</body>
+</html>
