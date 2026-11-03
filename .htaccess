@@ -1,0 +1,10 @@
+# Кодировка страниц для поисковых роботов
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+# www.engineerkazan.ru -> engineerkazan.ru (один основной адрес)
+RewriteCond %{HTTP_HOST} ^www\.engineerkazan\.ru$ [NC]
+RewriteRule ^(.*)$ https://engineerkazan.ru/$1 [R=301,L]
+# Старые адреса без .html
+RewriteRule ^privacy/?$ /privacy.html [R=301,L]
+RewriteRule ^consent/?$ /consent.html [R=301,L]
